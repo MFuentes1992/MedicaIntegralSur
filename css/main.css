@@ -11,6 +11,13 @@
     height: 100%;
     overflow-y: hidden;        
 }
+
+#bodyIndex{
+  background-color: #58A3FE !important;
+  height: 100%;
+  overflow-y: hidden;        
+}
+
 .row{
   margin-right: 0px !important;
 }
@@ -96,7 +103,7 @@
   list-style: none;
 }
 .blue{
-  color: #3282b8 !important;
+  color: #007BFF !important;
 }
 
 .popover{
@@ -158,4 +165,28 @@
   background-repeat: no-repeat;
   background-size: cover;*/
   background-color: #FFF;
+}
+
+.glideDefault{
+  margin-top: 5%;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+#logoImg{
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.responsiveContainer{
+  position: relative;
+  width: 50%;
+}
+
+.responsiveContainer > image{
+  width: 100px;
+  height: 100px;
 }

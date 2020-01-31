@@ -105,13 +105,13 @@
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                   <li class="glide__slide">
-                      <img src="img/banner/bannerResponsive/bannerR1.jpeg" alt="">
+                      <img src="img/banner/bannerResponsive/bannerR1.jpeg" width="100%" alt="">
                   </li>
                   <li class="glide__slide">
-                      <img src="img/banner/bannerResponsive/bannerR2.jpeg" alt="">
+                      <img src="img/banner/bannerResponsive/bannerR2.jpeg" width="100%" alt="">
                   </li>
                   <li class="glide__slide">
-                      <img src="img/banner/bannerResponsive/bannerR3.jpg" alt="">
+                      <img src="img/banner/bannerResponsive/bannerR3.jpg" width="100%" alt="">
                   </li>
                 </ul>
               </div>
@@ -129,15 +129,15 @@
                   <li class="nav-item"><i class="fas fa-map-marker-alt blue"></i><span class="white margin-sm-left">Calle Pablo Sidar # 3 Colonia Centro, Zacatepec Morelos</span></li>
                 </ul>
               </div>
-              <div class="col-md">
+              <div class="col-md" id="footerGap">
                 
               </div>
-              <div class="col-sm justify-content-end">
+              <div class="col-sm justify-content-end" id="footerSupport">
                 <ul class="list">
-                  <li class="nav-item margin-md-left" ><span class="white" style="font-weight: bold;">Soporte</span></li>
-                  <li class="nav-item margin-md-left" ><i class="fas fa-paper-plane blue"></i><span class="white margin-sm-left">Contacto <a href="">[Aqui]</a></span></li>
-                  <li class="nav-item margin-md-left" ><i class="fas fa-medkit blue"></i><span class="white margin-sm-left">Ayuda <a href="">[Aqui]</a></span></li>
-                  <li class="nav-item margin-md-left" ><i class="fas fa-calendar-alt blue"></i><span class="white margin-sm-left">Agendar una cita</span></li>
+                  <li class="nav-item margin-md-left" id="li1"><span class="white" style="font-weight: bold;">Soporte</span></li>
+                  <li class="nav-item margin-md-left" id="li2"><i class="fas fa-paper-plane blue"></i><span class="white margin-sm-left">Contacto <a href="">[Aqui]</a></span></li>
+                  <li class="nav-item margin-md-left" id="li3"><i class="fas fa-medkit blue"></i><span class="white margin-sm-left">Ayuda <a href="">[Aqui]</a></span></li>
+                  <li class="nav-item margin-md-left" id="li4"><i class="fas fa-calendar-alt blue"></i><span class="white margin-sm-left">Agendar una cita</span></li>
                 </ul>
               </div>
               
@@ -163,8 +163,7 @@
             $("#medicaLogo").css('left', `${logoXPosition}px`);
           }                              
         }else{
-          $("#medicaLogo").css('position', 'relative');
-          //$('#medicaLogo').css('width', `${logoOriginalWidth}px`);
+          $("#medicaLogo").css('position', 'relative');          
           $('#medicaLogo').css('width', '50%');
           $("#medicaLogo").css('top', '8');
           $("#medicaLogo").css('left', '');
@@ -183,13 +182,16 @@
         let removeClass = (elementID, className) =>{
           $(`#${elementID}`).removeClass(className);
         }
+
         let addClass = (elementID, className) =>{
           $(`#${elementID}`).addClass(className);
         }
+
         let getViewportValues = ()=>{
           viewportWidth = $(window).width();
           viewportHeight = $(window).height();
         }
+
         let minResponsive = ()=>{
           $('.glideDefault').hide();
           $('.glideResponsive').show();
@@ -208,7 +210,9 @@
             $('.facebook').append("Facebook");
             appendCounter = 1;
           }
+          $('#footer').css('position', 'relative');
         }
+
         let maxResponsive = ()=>{
           $('.glideDefault').show();                            
           $('.glideResponsive').hide(); 
@@ -228,15 +232,42 @@
             $('.email').empty();
             $('.whatsapp').empty();  
             appendCounter = 0;
-          }    
+          }
+          $('#footer').css('position', 'fixed');    
         }
+
         let smartPhoneResponsive = ()=>{
           minResponsive();
           removeClass('medicaLogo', 'container');
           addClass('medicaLogo', 'responsiveContainer');
         }
+
         let responsiveEngine = () =>{
           getViewportValues();
+          if(viewportWidth <= 1024 && viewportWidth > 800){
+            removeClass('footerGap', 'col-md');
+            addClass('footerGap', 'col-sm-1');
+          }
+          if(viewportWidth < 800 && viewportWidth > 500){
+            $('#footerGap').remove();
+            removeClass('footerSupport', 'col-md');
+            addClass('footerSupport', 'col-md-4');
+          }
+          if(viewportWidth < 500){            
+            $('#footerGap').remove();
+            $('#bodyIndex').css('height','63%');
+            removeClass('footerSupport', 'justify-content-end');
+            removeClass('li1', 'margin-md-left');
+            removeClass('li2', 'margin-md-left');
+            removeClass('li3', 'margin-md-left');
+            removeClass('li4', 'margin-md-left');                        
+          }
+          if(viewportWidth < 400){
+            $('#bodyIndex').css('height','56%');
+          }
+          if(viewportWidth < 300){
+            $('#bodyIndex').css('height','50%');
+          }
           if(viewportWidth <= 1000 && viewportWidth > 810){
             minResponsive();
           }else if(viewportWidth <= 810){

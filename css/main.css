@@ -190,3 +190,7 @@
   width: 100px;
   height: 100px;
 }
+
+.justify-left{
+  text-align: left;
+}

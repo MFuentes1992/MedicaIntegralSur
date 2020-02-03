@@ -30,7 +30,8 @@
 }
 #footerAbout{  
   position: relative;
-  left: 0;    
+  left: 0;
+  bottom: 0;    
   width: 100%;
   background-color: #333333;
 }
@@ -41,8 +42,15 @@
 }
 .about-container{
   background-color:#ececec !important;
+  position: relative;         
+}
+.about-container-fluid{
+  background-color:#ececec !important;
   position: relative;
-  height: 120%;        
+  padding-bottom: 5%;  
+}
+#aboutBody{
+  background-color: #ececec !important;
 }
 #map{
   position: relative;
@@ -109,12 +117,13 @@
 .popover{
   z-index: 10000;
 }
-.img-profile{
+
+.img-profile-container{
   margin-top: 5%;
   padding-left: 15%;  
   
 }
-.img-profile > img {
+.img-profile {
   border-radius: 50%;
 }
 
@@ -161,9 +170,6 @@
 }
 
 .swiper-container{
-  /*background-image: url('../img/banner.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;*/
   background-color: #FFF;
 }
 
@@ -183,7 +189,7 @@
 
 .responsiveContainer{
   position: relative;
-  width: 50%;
+  width: 65%;
 }
 
 .responsiveContainer > image{

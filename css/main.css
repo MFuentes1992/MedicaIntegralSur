@@ -18,6 +18,10 @@
   overflow-y: hidden;        
 }
 
+#BodyContact{  
+  background-color: #007BFF;
+}
+
 .row{
   margin-right: 0px !important;
 }
@@ -150,6 +154,17 @@
   -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 }
+
+.card-plane{
+  position: relative;
+  width: 100%;  
+  background-color: #FFF;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 2%;
+  padding: 3%;
+}
+
 .card-image > img{
   position: relative;
   border-radius: 2% 2% 0% 0%;
@@ -199,4 +214,14 @@
 
 .justify-left{
   text-align: left;
+}
+
+.jumbo{
+  font-size: 40em;
+  color: #FFF;
+  padding-left: 5%;
+}
+.contact{
+  background-color: #007BFF;
+  padding-top: 3%;
 }

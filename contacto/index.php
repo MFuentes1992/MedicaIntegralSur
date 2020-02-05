@@ -1,3 +1,7 @@
+<?php 
+  $url = "http://localhost/Proyectos/Web/2020/EspecialidadesMedicas/";
+?>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -5,15 +9,15 @@
         <title>
             Especialidades Médicas y Medicina General
         </title>
-        <link rel="stylesheet" href="css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/glide-3.4.1/dist/css/glide.core.min.css">
-        <link rel="stylesheet" href="css/glide-3.4.1/dist/css/glide.theme.min.css"> 
-        <link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/fontawesome.css">
-        <link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/solid.css">
-        <link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/brands.css">      
+        <link rel="stylesheet" href="<?=$url?>css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?=$url?>css/main.css">
+        <link rel="stylesheet" href="<?=$url?>css/glide-3.4.1/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="<?=$url?>css/glide-3.4.1/dist/css/glide.theme.min.css"> 
+        <link rel="stylesheet" href="<?=$url?>css/fontawesome-free-5.12.0-web/css/fontawesome.css">
+        <link rel="stylesheet" href="<?=$url?>css/fontawesome-free-5.12.0-web/css/solid.css">
+        <link rel="stylesheet" href="<?=$url?>css/fontawesome-free-5.12.0-web/css/brands.css">      
     </head>
-    <body>
+    <body id="BodyContact">
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow half-nav" id="halfNavBar">                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="moveLogo()" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,19 +26,19 @@
                 <div class="container collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item active margin-sm-right" id="collapseFirstIndex">
-                      <a class="nav-link font-weight-bold" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                      <a class="nav-link font-weight-bold" href="<?= $url ?>">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active margin-sm-right">
-                      <a class="nav-link font-weight-bold" href="acerca/index.html">Acerca</a>
+                      <a class="nav-link font-weight-bold" href="<?= $url ?>acerca/">Acerca</a>
                     </li>
                     <li class="nav-item active margin-sm-right">
-                      <a class="nav-link font-weight-bold" href="gaceta/index.html">Noticias</a>
+                      <a class="nav-link font-weight-bold" href="<?= $url ?>noticias/">Noticias</a>
                     </li>
                     <li class="nav-item active margin-sm-right">
-                      <a class="nav-link font-weight-bold" href="#">Contacto</a>
+                      <a class="nav-link font-weight-bold" href="<?= $url ?>contacto/">Contacto</a>
                     </li>
                     <li class="nav-item active hide" id="collapseIcons">
-                      <a class="nav-link white fnt-sm margin-sm-right" href="location/index.html">
+                      <a class="nav-link white fnt-sm margin-sm-right" href="<?= $url ?>/location/">
                         <!--<i class="fas fa-map-marked-alt"></i>&nbsp;--><span class="font-weight-bold location"></span> 
                       </a>
                     </li>
@@ -56,12 +60,12 @@
                   </ul>
                 </div>
                 <div class="container justify-content-center" id="medicaLogo">
-                  <a href="index.html"><img src="img/logo/LogoMedicaIntegral.png" class="d-inline-block align-top logo" alt="" id="logoImg"></a>
+                  <a href="<?= $url ?>"><img src="../img/logo/LogoMedicaIntegral.png" class="d-inline-block align-top logo" alt="" id="logoImg"></a>
                 </div>
                 <div class="container justify-content-end" id="navbarIcons">
                   <ul class="nav">
                     <li class="nav-item">
-                      <a class="nav-link white fnt-sm" href="location/index.html">
+                      <a class="nav-link white fnt-sm" href="<?= $url ?>location/">
                         <i class="fas fa-map-marked-alt"></i>
                       </a>
                     </li>
@@ -84,38 +88,36 @@
                 </div>
             </nav>
         </div>
-        <div class="container-fluid" id="bodyIndex">
-            <div class="glide glideDefault">
-                <div class="glide__track" data-glide-el="track">
-                  <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <img src="img/banner/banner1.jpg" width="100%" height="700px" alt="">
-                    </li>
-                    <li class="glide__slide">
-                        <img src="img/banner/banner2.jpg" width="100%" height="700px" alt="">
-                    </li>
-                    <li class="glide__slide">
-                        <img src="img/banner/banner3.jpg" width="100%" height="700px" alt="">
-                    </li>
-                  </ul>
+        <div class="container-fluid contact">
+            <div class="container-fluid contact">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="jumbo"><i class="fas fa-ambulance"></i></h1>
+                    </div>
+                    <div class="col-md-4 card-plane"> 
+                        <form>
+                            <div class="form-group">
+                                <label for="contactName">Nombre completo</label>
+                                <input type="text" class="form-control" id="contactName" aria-describedby="emailHelp">                                
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMail">Correo electronico</label>
+                                <input type="email" class="form-control" id="contactMail" aria-describedby="emailHelp">
+                                <small id="help" class="form-text text-muted">No compartiremos tu informacion personal.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactTel">Telefono</label>
+                                <input type="text" class="form-control" id="contactTel">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactDoubt">Dudas / Comentarios</label>
+                                <textarea class="form-control" id="contactDoubt" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>                 
+                    </div>
                 </div>
             </div>
-            <!--///////////////// GLIDE RESPONSIVE /////////////////////-->
-            <div class="glide glideResponsive">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li class="glide__slide">
-                      <img src="img/banner/bannerResponsive/bannerR1.jpeg" width="100%" alt="">
-                  </li>
-                  <li class="glide__slide">
-                      <img src="img/banner/bannerResponsive/bannerR2.jpeg" width="100%" alt="">
-                  </li>
-                  <li class="glide__slide">
-                      <img src="img/banner/bannerResponsive/bannerR3.jpg" width="100%" alt="">
-                  </li>
-                </ul>
-              </div>
-          </div>
         </div>
         <div class="container-fluid" id="footer">
             <div class="row" style="padding-top: 10px;">
@@ -143,10 +145,11 @@
             </div>
         </div>
     </body>
-    <script src="Js/jquery/jquery-3.4.1.min.js"></script>
-    <script src="css/glide-3.4.1/dist/glide.min.js"></script>  
-    <script src="css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>    
+    <script src="<?=$url?>Js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="<?=$url?>css/glide-3.4.1/dist/glide.min.js"></script>  
+    <script src="<?=$url?>css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>    
     <script>
+    /*//////////////////////LOGO ///////////////////////////////// */
       var moveLogo = ()=>{
         var logoYPosition = $("#medicaLogo").position().top;
         var logoXPosition = 432
@@ -168,15 +171,12 @@
           $("#medicaLogo").css('left', '');
         }
       }
+      /*** //////////////// APPLY CHANGES WHEN DOCUMENT READY ///////////////////////////*/
       $(document).ready(()=>{
 
         var viewportWidth = 0;
         var viewportHeight = 0;
         var appendCounter = 0;
-        var glideHorizon = new Glide('.glideDefault', { autoplay: 5000, hoverpause: false});
-        var glideVertical = new Glide('.glideResponsive', { autoplay: 5000, hoverpause: false});
-        glideVertical.mount();
-        glideHorizon.mount();
 
         let removeClass = (elementID, className) =>{
           $(`#${elementID}`).removeClass(className);
@@ -190,10 +190,8 @@
           viewportWidth = $(window).width();
           viewportHeight = $(window).height();
         }
-
+        /*//////////TABLETS///////////////// */
         let minResponsive = ()=>{
-          $('.glideDefault').hide();
-          $('.glideResponsive').show();
           removeClass('navbarNav', 'container');
           removeClass('halfNavBar', 'half-nav');
           removeClass('collapseFirstIndex', 'margin-sm-left');
@@ -211,10 +209,8 @@
           }
           $('#footer').css('position', 'relative');
         }
-
-        let maxResponsive = ()=>{
-          $('.glideDefault').show();                            
-          $('.glideResponsive').hide(); 
+        /*////////////////PC & LAPTOP///////////////////////////////////// */
+        let maxResponsive = ()=>{ 
           addClass('navbarNav', 'container');
           addClass('halfNavBar', 'half-nav');
           addClass('collapseFirstIndex', 'margin-sm-left');
@@ -234,13 +230,13 @@
           }
           $('#footer').css('position', 'fixed');    
         }
-
+        /**///////////////// SMARTPHONES /////////////////// */
         let smartPhoneResponsive = ()=>{
           minResponsive();
           removeClass('medicaLogo', 'container');
           addClass('medicaLogo', 'responsiveContainer');
         }
-
+        /**////////////////////////RESPONSIVE ENGINE ///////////////////// */
         let responsiveEngine = () =>{
           getViewportValues();
           if(viewportWidth <= 1024 && viewportWidth > 800){

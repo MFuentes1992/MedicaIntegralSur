@@ -1,3 +1,6 @@
+<?php 
+  $url = "http://localhost/Proyectos/Web/2020/EspecialidadesMedicas/";
+?>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -5,13 +8,13 @@
         <title>
             Especialidades Médicas y Medicina General
         </title>
-        <link rel="stylesheet" href="../css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/glide-3.4.1/dist/css/glide.core.min.css">
-        <link rel="stylesheet" href="../css/glide-3.4.1/dist/css/glide.theme.min.css"> 
-        <link rel="stylesheet" href="../css/fontawesome-free-5.12.0-web/css/fontawesome.css">
-        <link rel="stylesheet" href="../css/fontawesome-free-5.12.0-web/css/solid.css">
-        <link rel="stylesheet" href="../css/fontawesome-free-5.12.0-web/css/brands.css">      
+        <link rel="stylesheet" href="<?=$url?>css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?=$url?>css/main.css">
+        <link rel="stylesheet" href="<?=$url?>css/glide-3.4.1/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="<?=$url?>css/glide-3.4.1/dist/css/glide.theme.min.css"> 
+        <link rel="stylesheet" href="<?=$url?>css/fontawesome-free-5.12.0-web/css/fontawesome.css">
+        <link rel="stylesheet" href="<?=$url?>css/fontawesome-free-5.12.0-web/css/solid.css">
+        <link rel="stylesheet" href="<?=$url?>css/fontawesome-free-5.12.0-web/css/brands.css">      
     </head>
     <body>
         <div>
@@ -22,19 +25,19 @@
             <div class="container collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active margin-sm-right" id="collapseFirstIndex">
-                  <a class="nav-link font-weight-bold" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                  <a class="nav-link font-weight-bold" href="<?=$url?>">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active margin-sm-right">
-                  <a class="nav-link font-weight-bold" href="index.html">Acerca</a>
+                  <a class="nav-link font-weight-bold" href="<?=$url?>acerca/">Acerca</a>
                 </li>
                 <li class="nav-item active margin-sm-right">
-                  <a class="nav-link font-weight-bold" href="../gaceta/index.html">Noticias</a>
+                  <a class="nav-link font-weight-bold" href="<?=$url?>noticias/">Noticias</a>
                 </li>
                 <li class="nav-item active margin-sm-right">
-                  <a class="nav-link font-weight-bold" href="#">Contacto</a>
+                  <a class="nav-link font-weight-bold" href="<?=$url?>contacto/">Contacto</a>
                 </li>
                 <li class="nav-item active hide" id="collapseIcons">
-                  <a class="nav-link white fnt-sm margin-sm-right" href="../location/index.html">
+                  <a class="nav-link white fnt-sm margin-sm-right" href="<?=$url?>location/">
                     <!--<i class="fas fa-map-marked-alt"></i>&nbsp;--><span class="font-weight-bold location"></span> 
                   </a>
                 </li>
@@ -56,12 +59,12 @@
               </ul>
             </div>
             <div class="container justify-content-center" id="medicaLogo">
-              <a href="index.html"><img src="../img/logo/LogoMedicaIntegral.png" class="d-inline-block align-top logo" alt="" id="logoImg"></a>
+              <a href="<?=$url?>"><img src="<?=$url?>img/logo/LogoMedicaIntegral.png" class="d-inline-block align-top logo" alt="" id="logoImg"></a>
             </div>
             <div class="container justify-content-end" id="navbarIcons">
               <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link white fnt-sm" href="location/index.html">
+                  <a class="nav-link white fnt-sm" href="<?=$url?>location/">
                     <i class="fas fa-map-marked-alt"></i>
                   </a>
                 </li>
@@ -113,9 +116,9 @@
           </div>
         </div>
     </body>
-    <script src="../Js/jquery/jquery-3.4.1.min.js"></script>
-    <script src="../css/glide-3.4.1/dist/glide.min.js"></script>  
-    <script src="../css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="<?=$url?>Js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="<?=$url?>css/glide-3.4.1/dist/glide.min.js"></script>  
+    <script src="<?=$url?>css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
     <script>
       /*//////////////// LOGO /////////////////*/
       var moveLogo = ()=>{

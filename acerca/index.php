@@ -1,5 +1,5 @@
 <?php 
-  $url = "http://localhost/Proyectos/Web/2020/EspecialidadesMedicas/";
+  include '../util/util.php';
 ?>
 <html>
     <head>

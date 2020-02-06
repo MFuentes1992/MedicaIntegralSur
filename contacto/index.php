@@ -1,5 +1,5 @@
 <?php 
-  $url = "http://localhost/Proyectos/Web/2020/EspecialidadesMedicas/";
+  include '../util/util.php';
 ?>
 
 <html>
@@ -19,7 +19,7 @@
     </head>
     <body id="BodyContact">
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow half-nav" id="halfNavBar">                
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary half-nav" id="halfNavBar">                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="moveLogo()" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>

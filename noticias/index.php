@@ -1,5 +1,5 @@
 <?php 
-  $url = "http://localhost/Proyectos/Web/2020/EspecialidadesMedicas/";
+  include '../util/util.php';
 ?>
 <html>
     <head>
@@ -33,7 +33,7 @@
                   <a class="nav-link font-weight-bold" href="<?=$url?>acerca/">Acerca</a>
                 </li>
                 <li class="nav-item active margin-sm-right">
-                  <a class="nav-link font-weight-bold" href="<?=$url?>gaceta/">Noticias</a>
+                  <a class="nav-link font-weight-bold" href="<?=$url?>noticias/">Noticias</a>
                 </li>
                 <li class="nav-item active margin-sm-right">
                   <a class="nav-link font-weight-bold" href="<?=$url?>contacto/">Contacto</a>

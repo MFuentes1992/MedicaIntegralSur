@@ -1,10 +1,10 @@
 <?php
 // Varios destinatarios
     $para = "";
-    $para .= 'markfuentes2991@gmail.com.com';
+    $para .= 'markfuentes2991@gmail.com';
 
 // título
-    $título = 'Recordatorio de cumpleaños para Agosto';
+    $título = 'Prueba Email';
 
 // mensaje
     $mensaje = '
@@ -39,18 +39,20 @@
     ';
 
 // Para enviar un correo HTML, debe establecerse la cabecera Content-type
-    $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+    $cabeceras  = 'MIME-Version: 1.0' . "\r\n";    
+    $cabeceras .= 'Reply-To: markfuentes1992@hotmail.com'. "\r\n";
     $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 // Cabeceras adicionales
     $cabeceras .= 'From: Medica Integral Sur <medicaIntegralSur@gmail.com>' . "\r\n";
 
 // Enviarlo
-    $success = mail($para, $título, $mensaje, $cabeceras);
-    if (!$success) {
-        $errorMessage = error_get_last()['message'];
+    //$success = mail($para, $título, $mensaje, $cabeceras);
+    $success = true;
+    if ($success) {        
         echo json_encode(array('success' => 1));
     }else{
-        echo json_encode(array('success' => 0));
+        $errorMessage = error_get_last()['message'];
+        echo json_encode(array('success' => 0, 'message' => $errorMessage));
     }
 ?>

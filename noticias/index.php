@@ -103,7 +103,7 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/gaceta/gaceta1.jpeg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/noticias/MISMEDICO.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>                                    
@@ -116,7 +116,7 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/gaceta/gaceta2.jpeg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/noticias/MISMASAJE.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>                                    
@@ -129,7 +129,7 @@
 
                           <div class="card">
                               <div class="card-image">
-                                  <img src="<?=$url?>img/gaceta/psicologia.jpg" height="600" alt="" class="slide">
+                                  <img src="<?=$url?>img/noticias/MISNEUROCIRUGIA.jpg" height="600" alt="" class="slide">
                               </div>
                               <div class="card-text">
                                   <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>
@@ -142,7 +142,7 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/gaceta/psicologia.jpg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/noticias/MISNUTRICION.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>
@@ -150,7 +150,18 @@
                             </div>
 
                           </div>                           
-                        
+                          <div class="swiper-slide">
+
+                          <div class="card">
+                                <div class="card-image">
+                                    <img src="<?=$url?>img/noticias/MISPSICOLOGA.jpg" height="600" alt="" class="slide">
+                                </div>
+                                <div class="card-text">
+                                    <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>
+                                </div>
+                              </div>
+
+                          </div>                           
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -169,9 +180,9 @@
             <div class="col-sm">
               <ul class="list">
                 <li><span class="white" style="font-weight: bold;">Info</span></li>
-                <li class="nav-item"><i class="fas fa-phone-square-alt blue"></i><span class="white margin-sm-left">Cel. 734 34 1 20 62</span></li>
-                <li class="nav-item"><i class="fas fa-tty blue"></i><span class="white margin-sm-left">Tel. 134 12 0 62</span></li>
-                <li class="nav-item"><i class="fas fa-envelope-open-text blue"></i><span class="white margin-sm-left">Email. EspecialidadesMedicas@gmail.com</span></li>
+                <li class="nav-item"><i class="fas fa-phone-square-alt blue"></i><span class="white margin-sm-left">Cel. 734 128 87 30</span></li>
+                <li class="nav-item"><i class="fas fa-tty blue"></i><span class="white margin-sm-left">Tel. 734 12 0 62</span></li>
+                <li class="nav-item"><i class="fas fa-envelope-open-text blue"></i><span class="white margin-sm-left">Email.</span></li>
                 <li class="nav-item"><i class="fas fa-inbox blue"></i><span class="white margin-sm-left">CP. 62780</span></li>
                 <li class="nav-item"><i class="fas fa-map-marker-alt blue"></i><span class="white margin-sm-left">Calle Pablo Sidar # 3 Colonia Centro, Zacatepec Morelos</span></li>
               </ul>
@@ -182,8 +193,8 @@
             <div class="col-sm justify-content-end" id="footerSupport">
               <ul class="list">
                 <li class="nav-item margin-md-left" id="li1"><span class="white" style="font-weight: bold;">Soporte</span></li>
-                <li class="nav-item margin-md-left" id="li2"><i class="fas fa-paper-plane blue"></i><span class="white margin-sm-left">Contacto <a href="">[Aqui]</a></span></li>
-                <li class="nav-item margin-md-left" id="li3"><i class="fas fa-medkit blue"></i><span class="white margin-sm-left">Ayuda <a href="">[Aqui]</a></span></li>
+                <li class="nav-item margin-md-left" id="li2"><i class="fas fa-paper-plane blue"></i><span class="white margin-sm-left">Contacto <a href="">[Aquí]</a></span></li>
+                <li class="nav-item margin-md-left" id="li3"><i class="fas fa-medkit blue"></i><span class="white margin-sm-left">Ayuda <a href="">[Aquí]</a></span></li>
                 <li class="nav-item margin-md-left" id="li4"><i class="fas fa-calendar-alt blue"></i><span class="white margin-sm-left">Agendar una cita</span></li>
               </ul>
             </div>              

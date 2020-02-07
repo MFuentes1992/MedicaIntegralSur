@@ -101,18 +101,18 @@
                                 <input type="text" class="form-control" id="contactName" aria-describedby="emailHelp">                                
                             </div>
                             <div class="form-group">
-                                <label for="contactMail">Correo electronico</label>
+                                <label for="contactMail">Correo electrónico</label>
                                 <input type="email" class="form-control" id="contactMail" aria-describedby="emailHelp">
                                 
                             </div>
                             <div class="form-group">
-                                <label for="contactTel">Telefono</label>
+                                <label for="contactTel">Teléfono</label>
                                 <input type="text" class="form-control" id="contactTel">
                             </div>
                             <div class="form-group">
                                 <label for="contactMsg">Dudas / Comentarios</label>
                                 <textarea class="form-control" id="contactMsg" rows="3"></textarea>
-                                <small id="help" class="form-text text-muted">No compartiremos tu informacion personal.</small>
+                                <small id="help" class="form-text text-muted">No compartiremos tu información personal.</small>
                             </div>                            
                             <button type="submit" class="btn btn-primary">Enviar</button>                            
                             <br>
@@ -130,9 +130,9 @@
               <div class="col-sm">
                 <ul class="list">
                   <li><span class="white" style="font-weight: bold;">Info</span></li>
-                  <li class="nav-item"><i class="fas fa-phone-square-alt blue"></i><span class="white margin-sm-left">Cel. 734 34 1 20 62</span></li>
-                  <li class="nav-item"><i class="fas fa-tty blue"></i><span class="white margin-sm-left">Tel. 134 12 0 62</span></li>
-                  <li class="nav-item"><i class="fas fa-envelope-open-text blue"></i><span class="white margin-sm-left">Email. EspecialidadesMedicas@gmail.com</span></li>                  
+                  <li class="nav-item"><i class="fas fa-phone-square-alt blue"></i><span class="white margin-sm-left">Cel. 734 128 87 30</span></li>
+                  <li class="nav-item"><i class="fas fa-tty blue"></i><span class="white margin-sm-left">Tel. 734 12 0 62</span></li>
+                  <li class="nav-item"><i class="fas fa-envelope-open-text blue"></i><span class="white margin-sm-left">Email.</span></li>                  
                   <li class="nav-item"><i class="fas fa-inbox blue"></i><span class="white margin-sm-left">CP. 62780</span></li>
                   <li class="nav-item"><i class="fas fa-map-marker-alt blue"></i><span class="white margin-sm-left">Calle Pablo Sidar # 3 Colonia Centro, Zacatepec Morelos</span></li>
                 </ul>
@@ -143,8 +143,8 @@
               <div class="col-sm justify-content-end" id="footerSupport">
                 <ul class="list">
                   <li class="nav-item margin-md-left" id="li1"><span class="white" style="font-weight: bold;">Soporte</span></li>
-                  <li class="nav-item margin-md-left" id="li2"><i class="fas fa-paper-plane blue"></i><span class="white margin-sm-left">Contacto <a href="">[Aqui]</a></span></li>
-                  <li class="nav-item margin-md-left" id="li3"><i class="fas fa-medkit blue"></i><span class="white margin-sm-left">Ayuda <a href="">[Aqui]</a></span></li>
+                  <li class="nav-item margin-md-left" id="li2"><i class="fas fa-paper-plane blue"></i><span class="white margin-sm-left">Contacto <a href="">[Aquí]</a></span></li>
+                  <li class="nav-item margin-md-left" id="li3"><i class="fas fa-medkit blue"></i><span class="white margin-sm-left">Ayuda <a href="">[Aquí]</a></span></li>
                   <li class="nav-item margin-md-left" id="li4"><i class="fas fa-calendar-alt blue"></i><span class="white margin-sm-left">Agendar una cita</span></li>
                 </ul>
               </div>              

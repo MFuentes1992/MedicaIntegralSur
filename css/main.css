@@ -165,8 +165,7 @@ body{
   position: relative;
   width: 100%;  
   background-color: #FFF;
-  margin: auto;
-  margin-top: 2%;
+  margin: auto;  
   border-radius: 2%;
   padding: 3%;
 }

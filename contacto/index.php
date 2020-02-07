@@ -103,7 +103,7 @@
                             <div class="form-group">
                                 <label for="contactMail">Correo electronico</label>
                                 <input type="email" class="form-control" id="contactMail" aria-describedby="emailHelp">
-                                <small id="help" class="form-text text-muted">No compartiremos tu informacion personal.</small>
+                                
                             </div>
                             <div class="form-group">
                                 <label for="contactTel">Telefono</label>
@@ -112,8 +112,14 @@
                             <div class="form-group">
                                 <label for="contactMsg">Dudas / Comentarios</label>
                                 <textarea class="form-control" id="contactMsg" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                <small id="help" class="form-text text-muted">No compartiremos tu informacion personal.</small>
+                            </div>                            
+                            <button type="submit" class="btn btn-primary">Enviar</button>                            
+                            <br>
+                            <br>
+                            <div class="alert alert-danger hide" role="alert">
+                                Uno o varios campos estan vacíos. Por favor, completa todos.
+                            </div>    
                         </form>                 
                     </div>
                 </div>
@@ -147,7 +153,7 @@
     </body>
     <script src="<?=$url?>Js/jquery/jquery-3.4.1.min.js"></script>
     <script src="<?=$url?>css/glide-3.4.1/dist/glide.min.js"></script>  
-    <script src="<?=$url?>css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script> 
+    <script src="<?=$url?>css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>   
     <script>
     /*//////////////////////LOGO ///////////////////////////////// */
@@ -277,32 +283,71 @@
           responsiveEngine(); /*When rezising is active, we need to set the propper Banner array*/
         };
 
+        /**//////////////VALIDATOR ////////////// */
+        let validator = data =>{
+          let pass = true;
+          let nombre;
+          let tel;
+          let email;
+          let msg;
+
+          ({nombre, email, tel, msg} = data);
+
+          if(nombre == "")
+            pass = false;
+          if(email == "")
+            pass = false;
+          if(tel == "")
+            pass = false;
+          if(msg == "")
+            pass = false;
+          
+          return pass;
+            
+        }
         /**//////////////AJAX////////////////// */
 
-        $("#contactForm").submit(function(e){
+        $("#contactForm").submit(function(e){                             
           e.preventDefault();
-          $.ajax({
-            type: "POST",
-            url: "../util/mail.php",
-            data: $(this).serialize(),
-            success: function(response){
-              var jsonData = JSON.parse(response);
-              if(jsonData.success == "1"){
-                Swal.fire(
-                  'Good job!',
-                  'You clicked the button!',
-                  'success'
-                );
-              }else{
-                Swal.fire({
-                  icon: 'error',
-                  title: 'Oops...',
-                  text: 'Something went wrong!',
-                  footer: '<a href>Why do I have this issue?</a>'
-                })
+          data = {
+            nombre: $("#contactName").val(),
+            email: $("#contactMail").val(),
+            tel: $("#contactTel").val(),
+            msg: $("#contactMsg").val()
+          };
+
+          if(validator(data)){
+            $(".alert").css('visibility', 'hidden');
+            $("#contactName").val('');
+            $("#contactMail").val('');
+            $("#contactTel").val('');
+            $("#contactMsg").val('');
+              $.ajax({
+              type: "POST",
+              url: "http://www.medicaintegralsur.com/util/mail.php",
+              data: $(this).serialize(),
+              success: function(response){
+                var jsonData = JSON.parse(response);              
+                if(jsonData.success == 1){                
+                  Swal.fire(
+                    '!El correo se ha enviado!',
+                    'Nos pondremos en contacto lo más pronto posible.',
+                    'success'
+                  );
+                }else{
+                  Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!',
+                    footer: '<a href>Why do I have this issue?</a>'
+                  })
+                }
               }
-            }
-          });
+            });
+          }else{
+            $(".alert").css('visibility', 'visible');
+          }
+
         });
 
         /*******BOOTSTRAP POP OVER********/

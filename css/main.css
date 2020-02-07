@@ -6,6 +6,9 @@
   font-family: 'Raleway';
   src: url('../fonts/Raleway/Raleway-Regular.ttf');
 }
+body{
+  background-color: #007BFF;
+}
 #body{
     background-color: #ececec !important;
     height: 100%;
@@ -13,7 +16,7 @@
 }
 
 #bodyIndex{
-  background-color: #58A3FE !important;
+  background-color: #58A3FE !important;   
   height: 100%;
   overflow-y: hidden;        
 }
@@ -81,12 +84,14 @@
 .margin-sm-right{
   margin-right: 5%;
 }
-
 .margin-sm-left{
   margin-left: 5%;
 }
 .margin-md-left{
   margin-left: 25%;
+}
+.margin-md-right{
+  margin-right: 50px;
 }
 .white{
   color: #FFF !important;
@@ -109,6 +114,7 @@
 .half-nav{
   height: 80px;
   width: 100%;
+  z-index: 10000;
   position: fixed;  
 }
 .list{
@@ -178,14 +184,15 @@
   text-align: justify;
 }
 .news-container{
-  background-color:#DDDDDD !important;
+  background-color:#007BFF !important;
   position: relative;
   height: 100%;
-  width: 100%;  
+  width: 100%;
+  margin-top: 5%;  
 }
 
 .swiper-container{
-  background-color: #FFF;
+  background-color: #007BFF;
 }
 
 .glideDefault{
@@ -199,7 +206,7 @@
 #logoImg{
   width: 100px;
   height: 100px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .responsiveContainer{

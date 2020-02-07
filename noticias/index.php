@@ -18,24 +18,24 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">     
     </head>
-    <body style="background-color: #DDDDDD;">
+    <body style="background-color: #007BFF;">
         <div>
-          <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow half-nav" id="halfNavBar">                
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary half-nav" id="halfNavBar">                
             <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="moveLogo()" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="container collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item active margin-sm-right" id="collapseFirstIndex">
+                <li class="nav-item active margin-md-right" id="collapseFirstIndex">
                   <a class="nav-link font-weight-bold" href="<?=$url?>">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active margin-sm-right">
+                <li class="nav-item active margin-md-right">
                   <a class="nav-link font-weight-bold" href="<?=$url?>acerca/">Acerca</a>
                 </li>
-                <li class="nav-item active margin-sm-right">
+                <li class="nav-item active margin-md-right">
                   <a class="nav-link font-weight-bold" href="<?=$url?>noticias/">Noticias</a>
                 </li>
-                <li class="nav-item active margin-sm-right">
+                <li class="nav-item active margin-md-right">
                   <a class="nav-link font-weight-bold" href="<?=$url?>contacto/">Contacto</a>
                 </li>
                 <li class="nav-item active hide" id="collapseIcons">
@@ -66,22 +66,22 @@
             <div class="container justify-content-end" id="navbarIcons">
               <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link white fnt-sm" href="<?=$url?>location/">
+                  <a class="nav-link white fnt-md margin-md-right" href="<?=$url?>location/">
                     <i class="fas fa-map-marked-alt"></i>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link white fnt-sm" target="blank" href="https://www.facebook.com/MedicaIntegralSur/">
+                  <a class="nav-link white fnt-md margin-md-right" target="blank" href="https://www.facebook.com/MedicaIntegralSur/">
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link white fnt-sm" href="mailto:especialidadesmedicas@gmail.com">
+                  <a class="nav-link white fnt-md margin-md-right" href="mailto:especialidadesmedicas@gmail.com">
                     <i class="fas fa-envelope"></i>
                   </a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link white fnt-sm" href="#">
+                  <a class="nav-link white fnt-md margin-md-right" href="#">
                     <i class="fab fa-whatsapp" data-toggle="popover" data-placement="bottom" data-content="WhatsApp. 734 34 1 20 62"></i>
                   </a>
                 </li>
@@ -136,7 +136,20 @@
                               </div>
                           </div>
 
-                      </div>   
+                         </div>
+
+                         <div class="swiper-slide">
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="<?=$url?>img/gaceta/psicologia.jpg" height="600" alt="" class="slide">
+                                </div>
+                                <div class="card-text">
+                                    <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>
+                                </div>
+                            </div>
+
+                          </div>                           
                         
                     </div>
                     <!-- If we need pagination -->
@@ -319,11 +332,16 @@
           /*//////// GLIDE SWIPER ////////////////*/
           var mySwiper = new Swiper ('.swiper-container', {
                 // Optional parameters
+                slidesPerView: 3,
+                spaceBetween: 30,
                 direction: 'horizontal',
                 loop: true,
                 navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+                },
+                cubeEffect:{
+                  slideShadows: false,                  
                 }
             });
         });        

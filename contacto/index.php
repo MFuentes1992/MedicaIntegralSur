@@ -25,16 +25,16 @@
                 </button>
                 <div class="container collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
-                    <li class="nav-item active margin-sm-right" id="collapseFirstIndex">
+                    <li class="nav-item active margin-md-right" id="collapseFirstIndex">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>">Inicio <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active margin-sm-right">
+                    <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>acerca/">Acerca</a>
                     </li>
-                    <li class="nav-item active margin-sm-right">
+                    <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>noticias/">Noticias</a>
                     </li>
-                    <li class="nav-item active margin-sm-right">
+                    <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>contacto/">Contacto</a>
                     </li>
                     <li class="nav-item active hide" id="collapseIcons">
@@ -65,22 +65,22 @@
                 <div class="container justify-content-end" id="navbarIcons">
                   <ul class="nav">
                     <li class="nav-item">
-                      <a class="nav-link white fnt-sm" href="<?= $url ?>location/">
+                      <a class="nav-link white fnt-md margin-md-right" href="<?= $url ?>location/">
                         <i class="fas fa-map-marked-alt"></i>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link white fnt-sm" target="blank" href="https://www.facebook.com/MedicaIntegralSur/">
+                      <a class="nav-link white fnt-md margin-md-right" target="blank" href="https://www.facebook.com/MedicaIntegralSur/">
                         <i class="fab fa-facebook-square"></i>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link white fnt-sm" href="mailto:especialidadesmedicas@gmail.com">
+                      <a class="nav-link white fnt-md margin-md-right" href="mailto:especialidadesmedicas@gmail.com">
                         <i class="fas fa-envelope"></i>
                       </a>
                     </li>
                     <li class="nav-item" >
-                      <a class="nav-link white fnt-sm" href="#">
+                      <a class="nav-link white fnt-md margin-md-right" href="#">
                         <i class="fab fa-whatsapp" data-toggle="popover" data-placement="bottom" data-content="WhatsApp. 734 34 1 20 62"></i>
                       </a>
                     </li>
@@ -95,7 +95,7 @@
                         <h1 class="jumbo"><i class="fas fa-ambulance"></i></h1>
                     </div>
                     <div class="col-md-4 card-plane"> 
-                        <form>
+                        <form id="contactForm">
                             <div class="form-group">
                                 <label for="contactName">Nombre completo</label>
                                 <input type="text" class="form-control" id="contactName" aria-describedby="emailHelp">                                
@@ -110,8 +110,8 @@
                                 <input type="text" class="form-control" id="contactTel">
                             </div>
                             <div class="form-group">
-                                <label for="contactDoubt">Dudas / Comentarios</label>
-                                <textarea class="form-control" id="contactDoubt" rows="3"></textarea>
+                                <label for="contactMsg">Dudas / Comentarios</label>
+                                <textarea class="form-control" id="contactMsg" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>                 
@@ -147,7 +147,8 @@
     </body>
     <script src="<?=$url?>Js/jquery/jquery-3.4.1.min.js"></script>
     <script src="<?=$url?>css/glide-3.4.1/dist/glide.min.js"></script>  
-    <script src="<?=$url?>css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>    
+    <script src="<?=$url?>css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>   
     <script>
     /*//////////////////////LOGO ///////////////////////////////// */
       var moveLogo = ()=>{
@@ -275,6 +276,34 @@
         window.onresize = function(event) {
           responsiveEngine(); /*When rezising is active, we need to set the propper Banner array*/
         };
+
+        /**//////////////AJAX////////////////// */
+
+        $("#contactForm").submit(function(e){
+          e.preventDefault();
+          $.ajax({
+            type: "POST",
+            url: "../util/mail.php",
+            data: $(this).serialize(),
+            success: function(response){
+              var jsonData = JSON.parse(response);
+              if(jsonData.success == "1"){
+                Swal.fire(
+                  'Good job!',
+                  'You clicked the button!',
+                  'success'
+                );
+              }else{
+                Swal.fire({
+                  icon: 'error',
+                  title: 'Oops...',
+                  text: 'Something went wrong!',
+                  footer: '<a href>Why do I have this issue?</a>'
+                })
+              }
+            }
+          });
+        });
 
         /*******BOOTSTRAP POP OVER********/
         $('[data-toggle="popover"]').popover()

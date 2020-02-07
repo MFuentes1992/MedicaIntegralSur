@@ -19,41 +19,41 @@
     </head>
     <body>
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow half-nav" id="halfNavBar">                
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary half-nav" id="halfNavBar">                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="moveLogo()" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="container collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
-                    <li class="nav-item active margin-sm-right" id="collapseFirstIndex">
+                    <li class="nav-item active margin-md-right" id="collapseFirstIndex">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>">Inicio <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active margin-sm-right">
+                    <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>acerca/">Acerca</a>
                     </li>
-                    <li class="nav-item active margin-sm-right">
+                    <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>noticias/">Noticias</a>
                     </li>
-                    <li class="nav-item active margin-sm-right">
+                    <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>contacto/">Contacto</a>
                     </li>
                     <li class="nav-item active hide" id="collapseIcons">
-                      <a class="nav-link white fnt-sm margin-sm-right" href="<?= $url ?>/location/">
+                      <a class="nav-link white fnt-md margin-sm-right" href="<?= $url ?>/location/">
                         <!--<i class="fas fa-map-marked-alt"></i>&nbsp;--><span class="font-weight-bold location"></span> 
                       </a>
                     </li>
                     <li class="nav-item active hide" id="collapseIcons2">
-                      <a class="nav-link white fnt-sm" target="blank" href="https://www.facebook.com/MedicaIntegralSur/">
+                      <a class="nav-link white fnt-md" target="blank" href="https://www.facebook.com/MedicaIntegralSur/">
                         <!--<i class="fab fa-facebook-square"></i>&nbsp;--><span class="font-weight-bold facebook"></span> 
                       </a>
                     </li>
                     <li class="nav-item active hide" id="collapseIcons3">
-                      <a class="nav-link white fnt-sm" href="mailto:especialidadesmedicas@gmail.com">
+                      <a class="nav-link white fnt-md" href="mailto:especialidadesmedicas@gmail.com">
                         <!--<i class="fas fa-envelope"></i>&nbsp;--><span class="font-weight-bold email"></span> 
                       </a>
                     </li>
                     <li class="nav-item active hide" id="collapseIcons4">
-                      <a class="nav-link white fnt-sm" href="#">
+                      <a class="nav-link white fnt-md" href="#">
                         <!--<i class="fab fa-whatsapp" data-toggle="popover" data-placement="bottom" data-content="WhatsApp. 734 34 1 20 62"></i>&nbsp;--><span class="font-weight-bold whatsapp"></span> 
                       </a>
                     </li>                                       
@@ -65,22 +65,22 @@
                 <div class="container justify-content-end" id="navbarIcons">
                   <ul class="nav">
                     <li class="nav-item">
-                      <a class="nav-link white fnt-sm" href="<?= $url ?>location/">
+                      <a class="nav-link white fnt-md margin-md-right" href="<?= $url ?>location/">
                         <i class="fas fa-map-marked-alt"></i>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link white fnt-sm" target="blank" href="https://www.facebook.com/MedicaIntegralSur/">
+                      <a class="nav-link white fnt-md margin-md-right" target="blank" href="https://www.facebook.com/MedicaIntegralSur/">
                         <i class="fab fa-facebook-square"></i>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link white fnt-sm" href="mailto:especialidadesmedicas@gmail.com">
+                      <a class="nav-link white fnt-md margin-md-right" href="mailto:especialidadesmedicas@gmail.com">
                         <i class="fas fa-envelope"></i>
                       </a>
                     </li>
                     <li class="nav-item" >
-                      <a class="nav-link white fnt-sm" href="#">
+                      <a class="nav-link white fnt-md margin-md-right" href="#">
                         <i class="fab fa-whatsapp" data-toggle="popover" data-placement="bottom" data-content="WhatsApp. 734 34 1 20 62"></i>
                       </a>
                     </li>

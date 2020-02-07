@@ -54,7 +54,7 @@
                   </a>
                 </li>
                 <li class="nav-item active hide" id="collapseIcons4">
-                  <a class="nav-link white fnt-sm" href="#">
+                  <a class="nav-link white fnt-sm" href="https://api.whatsapp.com/send?phone=527341288730">
                     <!--<i class="fab fa-whatsapp" data-toggle="popover" data-placement="bottom" data-content="WhatsApp. 734 34 1 20 62"></i>&nbsp;--><span class="font-weight-bold whatsapp"></span> 
                   </a>
                 </li>                                       
@@ -81,8 +81,8 @@
                   </a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link white fnt-md margin-md-right" href="#">
-                    <i class="fab fa-whatsapp" data-toggle="popover" data-placement="bottom" data-content="WhatsApp. 734 34 1 20 62"></i>
+                  <a class="nav-link white fnt-md margin-md-right" href="https://api.whatsapp.com/send?phone=527341288730">
+                    <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
               </ul>

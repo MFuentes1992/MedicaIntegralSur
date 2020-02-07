@@ -247,6 +247,12 @@
 
         let responsiveEngine = () =>{
           getViewportValues();
+          if(viewportWidth < 1575 && viewportWidth > 1515){
+            $('.fnt-md').css('font-size', '1.5em');
+          }
+          if(viewportWidth < 1515){
+            $('.fnt-md').css('font-size', '1em');
+          }
           if(viewportWidth <= 1024 && viewportWidth > 800){
             removeClass('footerGap', 'col-md');
             addClass('footerGap', 'col-sm-1');

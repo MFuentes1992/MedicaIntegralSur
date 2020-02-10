@@ -90,7 +90,7 @@
         </div>
         <div class="container-fluid contact">
             <div class="container-fluid contact">
-                <div class="row">
+                <div class="row" id="rowContainer">
                     <div class="col-md-6" id="jumboContainer">
                         <h1 class="jumbo"><i class="fas fa-ambulance"></i></h1>
                     </div>
@@ -197,8 +197,9 @@
           viewportWidth = $(window).width();
           viewportHeight = $(window).height();
         }
-        /**/////////////////Make Footer Relative //////////// */
-        $('#footer').css('position', 'relative');
+        /**/////////////////Make Footer Relative //////////// */        
+        if(viewportHeight < 1000)
+          $('#footer').css('position', 'relative');
         /*//////////TABLETS///////////////// */
         let minResponsive = ()=>{
           removeClass('navbarNav', 'container');
@@ -208,7 +209,7 @@
           removeClass('collapseIcons2', 'hide');          
           removeClass('collapseIcons3', 'hide');          
           removeClass('collapseIcons4', 'hide');
-          removeClass('contactForm', 'col-md-6');                  
+          removeClass('contactForm', 'col-md-4');                  
           addClass('navbarIcons', 'hide');
           addClass('contactForm', 'col-md-8');
           $('#jumboContainer').remove();
@@ -246,7 +247,11 @@
         let smartPhoneResponsive = ()=>{
           minResponsive();
           removeClass('medicaLogo', 'container');
-          addClass('medicaLogo', 'responsiveContainer');
+          removeClass('rowContainer', 'row');
+          removeClass('contactForm', 'col-md-4');
+          addClass('medicaLogo', 'responsiveContainer');          
+          addClass('contactForm', 'col-md-8');
+          
         }
         /**////////////////////////RESPONSIVE ENGINE ///////////////////// */
         let responsiveEngine = () =>{

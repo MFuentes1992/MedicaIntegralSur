@@ -163,7 +163,7 @@ body{
 
 .card-plane{
   position: relative;
-  width: 100%;  
+  width: 90%;  
   background-color: #FFF;
   margin: auto;  
   border-radius: 2%;
@@ -210,7 +210,7 @@ body{
 
 .responsiveContainer{
   position: relative;
-  width: 65%;
+  width: 60%;
 }
 
 .responsiveContainer > image{

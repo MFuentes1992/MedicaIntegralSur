@@ -211,8 +211,7 @@
         var moveLogo = ()=>{
           var logoYPosition = $("#medicaLogo").position().top;
           var logoXPosition = 432
-          var logoOriginalWidth = 720; 
-          var totalSlides = 3;                
+          var logoOriginalWidth = 720;                          
           if(logoYPosition > 0){
             $("#medicaLogo").css('position', 'absolute');
             $('#medicaLogo').css('width', '100px');
@@ -230,7 +229,7 @@
           }
         }
         $(document).ready(()=>{
-
+          var totalSlides = 3; 
           var viewportWidth = 0;
           var viewportHeight = 0;
           var appendCounter = 0;

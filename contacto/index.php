@@ -198,8 +198,7 @@
           viewportHeight = $(window).height();
         }
         /**/////////////////Make Footer Relative //////////// */        
-        if(viewportHeight < 1000)
-          $('#footer').css('position', 'relative');
+
         /*//////////TABLETS///////////////// */
         let minResponsive = ()=>{
           removeClass('navbarNav', 'container');
@@ -256,6 +255,9 @@
         /**////////////////////////RESPONSIVE ENGINE ///////////////////// */
         let responsiveEngine = () =>{
           getViewportValues();
+          if(viewportHeight < 900)
+            $('#footer').css('position', 'relative');
+          //console.log(viewportHeight);
           if(viewportWidth <= 1450){
             $('.margin-md-right').css('margin-right', '14px');
           }          

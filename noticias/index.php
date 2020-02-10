@@ -211,7 +211,8 @@
         var moveLogo = ()=>{
           var logoYPosition = $("#medicaLogo").position().top;
           var logoXPosition = 432
-          var logoOriginalWidth = 720;                 
+          var logoOriginalWidth = 720; 
+          var totalSlides = 3;                
           if(logoYPosition > 0){
             $("#medicaLogo").css('position', 'absolute');
             $('#medicaLogo').css('width', '100px');
@@ -301,6 +302,7 @@
             getViewportValues();
             if(viewportWidth <= 1450){
             $('.margin-md-right').css('margin-right', '14px');
+            totalSlides = 2;
             }
             if(viewportWidth < 1575 && viewportWidth > 1515){
               $('.fnt-md').css('font-size', '1.5em');
@@ -310,12 +312,14 @@
             }            
             if(viewportWidth <= 1024 && viewportWidth > 800){
               removeClass('footerGap', 'col-md');
-              addClass('footerGap', 'col-sm-1');              
+              addClass('footerGap', 'col-sm-1'); 
+              totalSlides = 1;             
             }
             if(viewportWidth < 800 && viewportWidth > 500){
               $('#footerGap').remove();
               removeClass('footerSupport', 'col-md');
               addClass('footerSupport', 'col-md-4');
+              totalSlides = 1;
             }
             if(viewportWidth < 500){            
               $('#footerGap').remove();              
@@ -324,7 +328,8 @@
               removeClass('li1', 'margin-md-left');
               removeClass('li2', 'margin-md-left');
               removeClass('li3', 'margin-md-left');
-              removeClass('li4', 'margin-md-left');                        
+              removeClass('li4', 'margin-md-left'); 
+              totalSlides = 1;
             }
             if(viewportWidth < 400){
                             
@@ -352,7 +357,7 @@
           /*//////// GLIDE SWIPER ////////////////*/
           var mySwiper = new Swiper ('.swiper-container', {
                 // Optional parameters
-                slidesPerView: 3,
+                slidesPerView: totalSlides,
                 spaceBetween: 30,
                 direction: 'horizontal',
                 loop: true,

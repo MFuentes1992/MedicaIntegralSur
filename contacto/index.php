@@ -246,6 +246,9 @@
         /**////////////////////////RESPONSIVE ENGINE ///////////////////// */
         let responsiveEngine = () =>{
           getViewportValues();
+          if(viewportWidth <= 1450){
+            $('.margin-md-right').css('margin-right', '14px');
+          }          
           if(viewportWidth < 1575 && viewportWidth > 1515){
             $('.fnt-md').css('font-size', '1.5em');
           }

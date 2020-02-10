@@ -109,13 +109,13 @@
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                   <li class="glide__slide">
-                      <img src="img/banner/bannerResponsive/bannerR1.jpeg" width="100%" alt="">
+                      <img class="slideImage" src="img/banner/bannerResponsive/bannerR1.jpeg" width="100%" alt="">
                   </li>
                   <li class="glide__slide">
-                      <img src="img/banner/bannerResponsive/bannerR2.jpeg" width="100%" alt="">
+                      <img class="slideImage" src="img/banner/bannerResponsive/bannerR2.jpeg" width="100%" alt="">
                   </li>
                   <li class="glide__slide">
-                      <img src="img/banner/bannerResponsive/bannerR3.jpg" width="100%" alt="">
+                      <img class="slideImage" src="img/banner/bannerResponsive/bannerR3.jpg" width="100%" alt="">
                   </li>
                 </ul>
               </div>
@@ -247,6 +247,9 @@
 
         let responsiveEngine = () =>{
           getViewportValues();
+          if(viewportWidth <= 1450){
+            $('.margin-md-right').css('margin-right', '14px');
+          }
           if(viewportWidth < 1575 && viewportWidth > 1515){
             $('.fnt-md').css('font-size', '1.5em');
           }
@@ -264,18 +267,14 @@
           }
           if(viewportWidth < 500){            
             $('#footerGap').remove();
-            $('#bodyIndex').css('height','63%');
+            var imgHeight = $(".slideImage").height();
+            console.log(imgHeight);
+            $('#bodyIndex').css('height',`${imgHeight}`);
             removeClass('footerSupport', 'justify-content-end');
             removeClass('li1', 'margin-md-left');
             removeClass('li2', 'margin-md-left');
             removeClass('li3', 'margin-md-left');
             removeClass('li4', 'margin-md-left');                        
-          }
-          if(viewportWidth < 400){
-            $('#bodyIndex').css('height','56%');
-          }
-          if(viewportWidth < 300){
-            $('#bodyIndex').css('height','50%');
           }
           if(viewportWidth <= 1000 && viewportWidth > 810){
             minResponsive();

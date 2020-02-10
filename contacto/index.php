@@ -34,7 +34,7 @@
                     <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>noticias/">Noticias</a>
                     </li>
-                    <li class="nav-item active margin-md-right">
+                    <li class="nav-item active">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>contacto/">Contacto</a>
                     </li>
                     <li class="nav-item active hide" id="collapseIcons">
@@ -91,10 +91,10 @@
         <div class="container-fluid contact">
             <div class="container-fluid contact">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="jumboContainer">
                         <h1 class="jumbo"><i class="fas fa-ambulance"></i></h1>
                     </div>
-                    <div class="col-md-4 card-plane"> 
+                    <div class="col-md-4 card-plane" id="contactForm"> 
                         <form id="contactForm">
                             <div class="form-group">
                                 <label for="contactName">Nombre completo</label>
@@ -197,6 +197,8 @@
           viewportWidth = $(window).width();
           viewportHeight = $(window).height();
         }
+        /**/////////////////Make Footer Relative //////////// */
+        $('#footer').css('position', 'relative');
         /*//////////TABLETS///////////////// */
         let minResponsive = ()=>{
           removeClass('navbarNav', 'container');
@@ -205,21 +207,26 @@
           removeClass('collapseIcons', 'hide');          
           removeClass('collapseIcons2', 'hide');          
           removeClass('collapseIcons3', 'hide');          
-          removeClass('collapseIcons4', 'hide');          
+          removeClass('collapseIcons4', 'hide');
+          removeClass('contactForm', 'col-md-6');                  
           addClass('navbarIcons', 'hide');
+          addClass('contactForm', 'col-md-8');
+          $('#jumboContainer').remove();
+          $('#contactForm').css('margin-top', '0%');
+          $('#contactForm').css('margin-bottom', '5%');
           if(appendCounter == 0){
             $('.location').append("Location");
             $('.whatsapp').append("WhatsApp");
             $('.email').append("Email");
             $('.facebook').append("Facebook");
             appendCounter = 1;
-          }
-          $('#footer').css('position', 'relative');
+          }          
         }
         /*////////////////PC & LAPTOP///////////////////////////////////// */
         let maxResponsive = ()=>{ 
           addClass('navbarNav', 'container');
           addClass('halfNavBar', 'half-nav');
+          removeClass('medicaLogo', 'responsiveContainer');
           addClass('collapseFirstIndex', 'margin-sm-left');
           addClass('collapseIcons', 'hide');
           addClass('collapseIcons2', 'hide');
@@ -227,15 +234,13 @@
           addClass('collapseIcons4', 'hide');          
           addClass('medicaLogo', 'container');
           removeClass('navbarIcons', 'hide');
-          removeClass('medicaLogo', 'responsiveContainer');
           if(appendCounter == 1){
             $('.location').empty();
             $('.facebook').empty();
             $('.email').empty();
             $('.whatsapp').empty();  
             appendCounter = 0;
-          }
-          $('#footer').css('position', 'fixed');    
+          }           
         }
         /**///////////////// SMARTPHONES /////////////////// */
         let smartPhoneResponsive = ()=>{
@@ -256,8 +261,13 @@
             $('.fnt-md').css('font-size', '1em');
           }          
           if(viewportWidth <= 1024 && viewportWidth > 800){
+            $('#jumboContainer').remove();
+            $('#contactForm').css('margin-top', '10%');
+            $('#contactForm').css('margin-bottom', '5%');
             removeClass('footerGap', 'col-md');
-            addClass('footerGap', 'col-sm-1');
+            removeClass('contactForm', 'col-md-4');
+            addClass('footerGap', 'col-sm-1');                      
+            addClass('contactForm', 'col-md-6');            
           }
           if(viewportWidth < 800 && viewportWidth > 500){
             $('#footerGap').remove();
@@ -266,7 +276,7 @@
           }
           if(viewportWidth < 500){            
             $('#footerGap').remove();
-            $('#bodyIndex').css('height','63%');
+            //$('#bodyIndex').css('height','63%');
             removeClass('footerSupport', 'justify-content-end');
             removeClass('li1', 'margin-md-left');
             removeClass('li2', 'margin-md-left');
@@ -274,10 +284,10 @@
             removeClass('li4', 'margin-md-left');                        
           }
           if(viewportWidth < 400){
-            $('#bodyIndex').css('height','56%');
+            //$('#bodyIndex').css('height','56%');
           }
           if(viewportWidth < 300){
-            $('#bodyIndex').css('height','50%');
+            //$('#bodyIndex').css('height','50%');
           }
           if(viewportWidth <= 1000 && viewportWidth > 810){
             minResponsive();

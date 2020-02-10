@@ -141,7 +141,7 @@
                   <li class="nav-item margin-md-left" id="li1"><span class="white" style="font-weight: bold;">Soporte</span></li>
                   <li class="nav-item margin-md-left" id="li2"><i class="fas fa-paper-plane blue"></i><span class="white margin-sm-left">Contacto <a href="">[Aquí]</a></span></li>
                   <li class="nav-item margin-md-left" id="li3"><i class="fas fa-medkit blue"></i><span class="white margin-sm-left">Ayuda <a href="">[Aquí]</a></span></li>
-                  <li class="nav-item margin-md-left" id="li4"><i class="fas fa-calendar-alt blue"></i><span class="white margin-sm-left">Agendar una cita</span></li>
+                  <li class="nav-item margin-md-left" id="li4"><i class="fas fa-calendar-alt blue"></i><span class="white margin-sm-left">Agendar una cita <a href="">[Aquí]</a></span></li>
                 </ul>
               </div>              
             </div>
@@ -151,6 +151,7 @@
     <script src="css/glide-3.4.1/dist/glide.min.js"></script>  
     <script src="css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>    
     <script>
+    /**//////////////// LOGO RESPONSIVE LOGIC ////////////////////*/
       var moveLogo = ()=>{
         var logoYPosition = $("#medicaLogo").position().top;
         var logoXPosition = 432
@@ -174,9 +175,11 @@
       }
       $(document).ready(()=>{
 
+        /**////// VIEWPORT VARIABLES ///////// */
         var viewportWidth = 0;
         var viewportHeight = 0;
         var appendCounter = 0;
+        /**GLIDE CARROUSSEL LOGIC */
         var glideHorizon = new Glide('.glideDefault', { autoplay: 5000, hoverpause: false});
         var glideVertical = new Glide('.glideResponsive', { autoplay: 5000, hoverpause: false});
         glideVertical.mount();
@@ -194,7 +197,7 @@
           viewportWidth = $(window).width();
           viewportHeight = $(window).height();
         }
-
+        /**////////////// RESPONSIVE LOGIC FOR TABLETS ////////////// */
         let minResponsive = ()=>{
           $('.glideDefault').hide();
           $('.glideResponsive').show();
@@ -215,7 +218,7 @@
           }
           $('#footer').css('position', 'relative');
         }
-
+        /*////////////// RESPONSIVE LOGIC FOR PC & LAPTOP ///////// */
         let maxResponsive = ()=>{
           $('.glideDefault').show();                            
           $('.glideResponsive').hide(); 
@@ -238,13 +241,13 @@
           }
           $('#footer').css('position', 'fixed');    
         }
-
+        /*//////////////// RESPONSIVE LOGIC FOR SMARTPHONES /////////// */
         let smartPhoneResponsive = ()=>{
           minResponsive();
           removeClass('medicaLogo', 'container');
           addClass('medicaLogo', 'responsiveContainer');
         }
-
+        /**/////////////////RESPONSIVE ENGINE //////////////// */
         let responsiveEngine = () =>{
           getViewportValues();
           if(viewportWidth <= 1450){
@@ -267,8 +270,7 @@
           }
           if(viewportWidth < 500){            
             $('#footerGap').remove();
-            var imgHeight = $(".slideImage").height();
-            console.log(imgHeight);
+            var imgHeight = $(".slideImage").height();            
             $('#bodyIndex').css('height',`${imgHeight}`);
             removeClass('footerSupport', 'justify-content-end');
             removeClass('li1', 'margin-md-left');

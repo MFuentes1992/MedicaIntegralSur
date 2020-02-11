@@ -38,7 +38,7 @@
                       <a class="nav-link font-weight-bold" href="<?= $url ?>contacto/">Contacto</a>
                     </li>
                     <li class="nav-item active hide" id="collapseIcons">
-                      <a class="nav-link white fnt-md margin-sm-right" href="<?= $url ?>/location/">
+                      <a class="nav-link white fnt-md margin-sm-right" href="<?= $url ?>location/">
                         <!--<i class="fas fa-map-marked-alt"></i>&nbsp;--><span class="font-weight-bold location"></span> 
                       </a>
                     </li>

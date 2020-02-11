@@ -255,7 +255,7 @@
         /**////////////////////////RESPONSIVE ENGINE ///////////////////// */
         let responsiveEngine = () =>{
           getViewportValues();
-          if(viewportHeight < 900)
+          if(viewportWidth < 500)
             $('#footer').css('position', 'relative');
           //console.log(viewportHeight);
           if(viewportWidth <= 1450){

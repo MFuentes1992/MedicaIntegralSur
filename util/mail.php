@@ -56,7 +56,7 @@ $msg = isset($_POST["msg"])?$_POST["msg"]: "NA";
     <body>
         <div class="header">
             <h1>Médica Integral Sur</h1>
-            <img src="img/logo/LogoMedicaIntegral.jpg" alt="" id="logoImg">
+            <img src="http://medicaintegralsur.com/img/logo/LogoMedicaIntegral.jpg" alt="" id="logoImg">
         </div>
         <div class="body">
             <h1>

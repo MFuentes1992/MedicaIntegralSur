@@ -60,7 +60,7 @@
                   </ul>
                 </div>
                 <div class="container justify-content-center" id="medicaLogo">
-                  <a href="<?= $url ?>"><img src="img/logo/LogoMedicaIntegral.png" class="d-inline-block align-top logo" alt="" id="logoImg"></a>
+                  <a href="<?= $url ?>"><img src="img/logo/LogoMedicaIntegral.jpg" class="d-inline-block align-top logo" alt="" id="logoImg"></a>
                 </div>
                 <div class="container justify-content-end" id="navbarIcons">
                   <ul class="nav">

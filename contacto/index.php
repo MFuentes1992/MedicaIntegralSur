@@ -344,14 +344,10 @@
 
           if(validator(data)){
             $(".alert").css('visibility', 'hidden');
-            $("#contactName").val('');
-            $("#contactMail").val('');
-            $("#contactTel").val('');
-            $("#contactMsg").val('');
               $.ajax({
               type: "POST",
               url: "http://www.medicaintegralsur.com/util/mail.php",
-              data: $(this).serialize(),
+              data: data,
               success: function(response){
                 var jsonData = JSON.parse(response);              
                 if(jsonData.success == 1){                
@@ -360,6 +356,10 @@
                     'Nos pondremos en contacto lo más pronto posible.',
                     'success'
                   );
+                  $("#contactName").val('');
+                  $("#contactMail").val('');
+                  $("#contactTel").val('');
+                  $("#contactMsg").val('');
                 }else{
                   Swal.fire({
                     icon: 'error',

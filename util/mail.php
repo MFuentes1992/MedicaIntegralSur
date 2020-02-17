@@ -5,13 +5,13 @@ header('Access-Control-Allow-Origin: *');
     $para .= 'markfuentes2991@gmail.com';
 
 // título
-    $título = 'Prueba Email';
+    $título = 'Nuevo Email';
 
 //variables
-$nombre = $_POST["contactName"];
-$email = $_POST["contactMail"];
-$tel = $_POST["contactTel"];
-$msg = $_POST["contactMsg"];
+$nombre = isset($_POST["nombre"])? $_POST["nombre"]: "NA";
+$email = isset($_POST["email"])? $_POST["email"]: "NA";
+$tel = isset($_POST["tel"])?$_POST["tel"]: "NA";
+$msg = isset($_POST["msg"])?$_POST["msg"]: "NA";
 
 // mensaje
     $mensaje = '
@@ -64,18 +64,29 @@ $msg = $_POST["contactMsg"];
             </h1>
             <table>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Teléfono</th>
+                    <th>Nombre</th>                                
                 </tr>
                 <tr>
-                    <td>'.$nombre.'</td>
+                    <td>
+                        '.$nombre.'
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                </tr>
+                <tr>
                     <td>'.$email.'</td>
+                </tr>
+                <tr>
+                    <th>Teléfono</th>
+                </tr>
+                <tr>                                
                     <td>'.$tel.'</td>
                 </tr>
             </table>
             <h3>Mensaje:</h3>
-            <p>'.$msg.'
+            <p>
+                '.$msg.'
             </p>
         </div>
     </body>

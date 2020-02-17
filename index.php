@@ -109,7 +109,7 @@
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                   <li class="glide__slide">
-                      <img class="slideImage" src="img/banner/bannerResponsive/bannerR1.jpeg" width="100%" alt="">
+                      <img class="slideImage" src="img/banner/bannerResponsive/bannerR1.jpeg" onload="bodyIndexLoader()" width="100%" alt="">
                   </li>
                   <li class="glide__slide">
                       <img class="slideImage" src="img/banner/bannerResponsive/bannerR2.jpeg" width="100%" alt="">
@@ -151,6 +151,11 @@
     <script src="css/glide-3.4.1/dist/glide.min.js"></script>  
     <script src="css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>    
     <script>
+      var bodyIndexLoader = ()=>{
+        var imgHeight = $(".slideImage").height();            
+        $('#bodyIndex').css('height',`${imgHeight}`);
+      }
+
     /**//////////////// LOGO RESPONSIVE LOGIC ////////////////////*/
       var moveLogo = ()=>{
         var logoYPosition = $("#medicaLogo").position().top;
@@ -179,11 +184,12 @@
         var viewportWidth = 0;
         var viewportHeight = 0;
         var appendCounter = 0;
-        /**GLIDE CARROUSSEL LOGIC */
+        /**GLIDE CARROUSSEL LOGIC */        
         var glideHorizon = new Glide('.glideDefault', { autoplay: 5000, hoverpause: false});
         var glideVertical = new Glide('.glideResponsive', { autoplay: 5000, hoverpause: false});
         glideVertical.mount();
         glideHorizon.mount();
+        console.log("Mounted");
 
         let removeClass = (elementID, className) =>{
           $(`#${elementID}`).removeClass(className);
@@ -270,8 +276,6 @@
           }
           if(viewportWidth < 500){            
             $('#footerGap').remove();
-            var imgHeight = $(".slideImage").height();            
-            $('#bodyIndex').css('height',`${imgHeight}`);
             removeClass('footerSupport', 'justify-content-end');
             removeClass('li1', 'margin-md-left');
             removeClass('li2', 'margin-md-left');
@@ -295,5 +299,7 @@
         $('[data-toggle="popover"]').popover()
       });
       
+
+
     </script>
 </html>

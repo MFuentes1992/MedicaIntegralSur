@@ -215,7 +215,7 @@
           $('#contactForm').css('margin-top', '0%');
           $('#contactForm').css('margin-bottom', '5%');
           if(appendCounter == 0){
-            $('.location').append("Location");
+            $('.location').append("Ubicación");
             $('.whatsapp').append("WhatsApp");
             $('.email').append("Email");
             $('.facebook').append("Facebook");

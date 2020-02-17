@@ -210,7 +210,7 @@
           removeClass('collapseIcons4', 'hide');          
           addClass('navbarIcons', 'hide');
           if(appendCounter == 0){
-            $('.location').append("Location");
+            $('.location').append("Ubicación");
             $('.whatsapp').append("WhatsApp");
             $('.email').append("Email");
             $('.facebook').append("Facebook");

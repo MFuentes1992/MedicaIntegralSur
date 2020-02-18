@@ -152,8 +152,11 @@
     <script src="css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>    
     <script>
       var bodyIndexLoader = ()=>{
-        var imgHeight = $(".slideImage").height();            
-        $('#bodyIndex').css('height',`${imgHeight}`);
+        if($(window).width() < 1000){
+          var imgHeight = $(".slideImage").height(); 
+          console.log(imgHeight);           
+          $('#bodyIndex').css('height',`${imgHeight}`);
+        }
       }
 
     /**//////////////// LOGO RESPONSIVE LOGIC ////////////////////*/
@@ -222,7 +225,7 @@
             $('.facebook').append("Facebook");
             appendCounter = 1;
           }
-          $('#footer').css('position', 'relative');
+          $('#footer').css('position', 'relative'); 
         }
         /*////////////// RESPONSIVE LOGIC FOR PC & LAPTOP ///////// */
         let maxResponsive = ()=>{
@@ -245,7 +248,8 @@
             $('.whatsapp').empty();  
             appendCounter = 0;
           }
-          $('#footer').css('position', 'fixed');    
+          $('#footer').css('position', 'fixed'); 
+ 
         }
         /*//////////////// RESPONSIVE LOGIC FOR SMARTPHONES /////////// */
         let smartPhoneResponsive = ()=>{

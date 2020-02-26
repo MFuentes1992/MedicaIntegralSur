@@ -224,11 +224,25 @@ body{
 .justify-left{
   text-align: left;
 }
-
+.hidden{
+  height: 0px;
+  overflow-y: hidden;
+}
 .jumbo{
   font-size: 28em;
   color: #FFF;
-  padding-left: 5%;
+}
+#jumboContainer > p{
+  color: #FFF;
+  margin-left: 10%;
+  font-size: 18pt;
+}
+#jumboContainer > h1{
+  color: #FFF;
+  margin-left: 10%;
+}
+.contact-title{
+  font-size: 5em;
 }
 .contact{
   background-color: #007BFF;

@@ -32,7 +32,7 @@
                       <a class="nav-link font-weight-bold" href="<?= $url ?>acerca/">Acerca</a>
                     </li>
                     <li class="nav-item active margin-md-right">
-                      <a class="nav-link font-weight-bold" href="<?= $url ?>noticias/">Noticias</a>
+                      <a class="nav-link font-weight-bold" href="<?= $url ?>servicios/">Servicios</a>
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>contacto/">Contacto</a>

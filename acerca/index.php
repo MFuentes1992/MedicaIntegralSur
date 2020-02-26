@@ -93,39 +93,33 @@
         <div class="container-fluid about-container">            
             <div class="container-fluid about-container-fluid">
                 <div class="row">
-                    <div class="col-md-6 img-profile-container">
+                    <!--<div class="col-md-6 img-profile-container">
                         <img src="../img/profile/profile.jpg" alt="" class="img-profile">
                     </div>
                     <div class="col-md-1">
 
-                    </div>
-                    <div class="col-md-5">
-                        <h3 class="paragraph-title">Nombre Completo</h3>
+                    </div> -->
+                    <div class="col-lg-12 col-sm-12">
+                        <h3 class="paragraph-title">MISIÓN:</h3>
                         <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repellat iste cumque at optio, placeat vitae, eligendi est excepturi reiciendis provident dignissimos. Culpa asperiores magni sequi nihil similique veritatis libero?
-                            Error alias numquam repellat corporis hic reprehenderit dolorem suscipit fugit rerum dolores nihil possimus pariatur architecto eius, odit incidunt et, explicabo sint quod! Doloremque libero fugit non quasi eaque omnis.
-                            Reiciendis quam quod voluptates. Maxime, recusandae incidunt! Placeat perferendis velit quis repellat, aliquid autem quia aspernatur voluptate consequuntur earum tempore libero dolore esse corrupti iste dicta dolorum? Debitis, nisi quia.
-                            Possimus inventore dolore eos deleniti magnam. Ut ab veniam dolor, temporibus corporis pariatur assumenda deserunt labore natus ipsa illo! Impedit aspernatur voluptas incidunt sequi maxime harum aliquid, quod distinctio corporis!
-                            Esse, dignissimos necessitatibus. Quo minus quis nulla iste non a sint delectus voluptas, ut deleniti ipsum, quod praesentium maxime ea magni? Provident quam illo voluptates modi fugit commodi nihil vero.
+                          Contribuir al cuidado de la vida y la recuperación de la salud, 
+                          mediante un servicio integral, con personal capacitado, calificado y con trato amable.
                         </p>
                     </div>
                 </div> 
                 <br>
                 <div class="row">
-                    <div class="col-md-6 img-profile-container">
+                    <!--<div class="col-md-6 img-profile-container">
                         <img src="../img/profile/profile.jpg" alt="" class="img-profile">
                     </div>
                     <div class="col-md-1">
 
-                    </div>
-                    <div class="col-md-5">
-                        <h3 class="paragraph-title">Nombre Completo</h3>
+                    </div>-->
+                    <div class="col-lg-12 col-sm-12">
+                        <h3 class="paragraph-title">VISIÓN:</h3>
                         <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repellat iste cumque at optio, placeat vitae, eligendi est excepturi reiciendis provident dignissimos. Culpa asperiores magni sequi nihil similique veritatis libero?
-                            Error alias numquam repellat corporis hic reprehenderit dolorem suscipit fugit rerum dolores nihil possimus pariatur architecto eius, odit incidunt et, explicabo sint quod! Doloremque libero fugit non quasi eaque omnis.
-                            Reiciendis quam quod voluptates. Maxime, recusandae incidunt! Placeat perferendis velit quis repellat, aliquid autem quia aspernatur voluptate consequuntur earum tempore libero dolore esse corrupti iste dicta dolorum? Debitis, nisi quia.
-                            Possimus inventore dolore eos deleniti magnam. Ut ab veniam dolor, temporibus corporis pariatur assumenda deserunt labore natus ipsa illo! Impedit aspernatur voluptas incidunt sequi maxime harum aliquid, quod distinctio corporis!
-                            Esse, dignissimos necessitatibus. Quo minus quis nulla iste non a sint delectus voluptas, ut deleniti ipsum, quod praesentium maxime ea magni? Provident quam illo voluptates modi fugit commodi nihil vero.
+                          Ser una institución de  de alta calidad, líder en atención integral y segura, 
+                          que se convierta en referente de la atención médica privada en México.
                         </p>
                     </div>
                 </div>             

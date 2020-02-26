@@ -48,7 +48,7 @@ body{
 }
 .about-container{
   background-color:#ececec !important;
-  position: relative;         
+  position: relative;       
 }
 .about-container-fluid{
   background-color:#ececec !important;
@@ -138,14 +138,17 @@ body{
 
 .paragraph-title{
   font-family: 'Oswald';
-  margin-top: 8%;  
+  margin-top: 8%;
+  padding-right: 5%;
+  padding-left: 5%; 
 }
 .paragraph{
   font-family: Raleway;
   margin-top: 5%;
   font-size: medium;
   word-wrap: break-word;
-  padding-right: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   text-align: justify;
 }
 .card{

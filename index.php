@@ -17,6 +17,16 @@
         <link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/solid.css">
         <link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/brands.css">      
     </head>
+    <script src="Js/jquery/jquery-3.4.1.min.js"></script>
+    <script>
+      var bodyIndexLoaderResponsive = ()=>{
+        viewportWidth = $(window).width();
+        if(viewportWidth <= 1020){
+          var imgHeight = $(".slideImageResponsive").height();                  
+          $('#bodyIndex').css('height',`${imgHeight}`);
+        }
+      }
+    </script>
     <body>
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary half-nav" id="halfNavBar">                
@@ -93,13 +103,13 @@
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
                     <li class="glide__slide">
-                        <img src="img/banner/banner1.jpg" width="100%" height="700px" alt="">
+                        <img src="img/banner/banner1.jpg"  width="100%" alt="">
                     </li>
                     <li class="glide__slide">
-                        <img src="img/banner/banner2.jpg" width="100%" height="700px" alt="">
+                        <img class="slideImage" src="img/banner/banner2.jpg" width="100%" height="841"  alt="">
                     </li>
                     <li class="glide__slide">
-                        <img src="img/banner/banner3.jpg" width="100%" height="700px" alt="">
+                        <img class="slideImage" src="img/banner/banner3.jpg" width="100%" height="841"  alt="">
                     </li>
                   </ul>
                 </div>
@@ -109,13 +119,13 @@
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                   <li class="glide__slide">
-                      <img class="slideImage" src="img/banner/bannerResponsive/bannerR1.jpeg" onload="bodyIndexLoader()" width="100%" alt="">
+                      <img class="slideImageResponsive" src="img/banner/bannerResponsive/bannerR1.jpeg" onload="bodyIndexLoaderResponsive()"  width="100%" alt="">
                   </li>
                   <li class="glide__slide">
-                      <img class="slideImage" src="img/banner/bannerResponsive/bannerR2.jpeg" width="100%" alt="">
+                      <img class="slideImageResponsive" src="img/banner/bannerResponsive/bannerR2.jpeg"  width="100%" alt="">
                   </li>
                   <li class="glide__slide">
-                      <img class="slideImage" src="img/banner/bannerResponsive/bannerR3.jpg" width="100%" alt="">
+                      <img class="slideImageResponsive" src="img/banner/bannerResponsive/bannerR3.jpg" width="100%" alt="">
                   </li>
                 </ul>
               </div>
@@ -147,15 +157,10 @@
             </div>
         </div>
     </body>
-    <script src="Js/jquery/jquery-3.4.1.min.js"></script>
+    
     <script src="css/glide-3.4.1/dist/glide.min.js"></script>  
     <script src="css/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>    
     <script>
-      var bodyIndexLoader = ()=>{
-        var imgHeight = $(".slideImage").height();            
-        $('#bodyIndex').css('height',`${imgHeight}`);
-      }
-
     /**//////////////// LOGO RESPONSIVE LOGIC ////////////////////*/
       var moveLogo = ()=>{
         var logoYPosition = $("#medicaLogo").position().top;
@@ -167,13 +172,13 @@
           $('#medicaLogo').css('width', '100px');
           $("#medicaLogo").css('top', '0');
           if($(window).width() < 700){
-            $("#medicaLogo").css('left', `${logoXPosition - 250}px`);
+            $("#medicaLogo").css('left', `${$(window).width()/2}px`);
           }else{
-            $("#medicaLogo").css('left', `${logoXPosition}px`);
+            $("#medicaLogo").css('left', `${$(window).width()/2}px`);
           }                              
         }else{
           $("#medicaLogo").css('position', 'relative');          
-          $('#medicaLogo').css('width', '65%');
+          $('#medicaLogo').css('width', `${$(window).width()/2}`);
           $("#medicaLogo").css('top', '8');
           $("#medicaLogo").css('left', '');
         }
@@ -189,7 +194,6 @@
         var glideVertical = new Glide('.glideResponsive', { autoplay: 5000, hoverpause: false});
         glideVertical.mount();
         glideHorizon.mount();
-        console.log("Mounted");
 
         let removeClass = (elementID, className) =>{
           $(`#${elementID}`).removeClass(className);
@@ -207,21 +211,6 @@
         let minResponsive = ()=>{
           $('.glideDefault').hide();
           $('.glideResponsive').show();
-          removeClass('navbarNav', 'container');
-          removeClass('halfNavBar', 'half-nav');
-          removeClass('collapseFirstIndex', 'margin-sm-left');
-          removeClass('collapseIcons', 'hide');          
-          removeClass('collapseIcons2', 'hide');          
-          removeClass('collapseIcons3', 'hide');          
-          removeClass('collapseIcons4', 'hide');          
-          addClass('navbarIcons', 'hide');
-          if(appendCounter == 0){
-            $('.location').append("Ubicación");
-            $('.whatsapp').append("WhatsApp");
-            $('.email').append("Email");
-            $('.facebook').append("Facebook");
-            appendCounter = 1;
-          }
           $('#footer').css('position', 'relative');
         }
         /*////////////// RESPONSIVE LOGIC FOR PC & LAPTOP ///////// */
@@ -245,12 +234,27 @@
             $('.whatsapp').empty();  
             appendCounter = 0;
           }
-          $('#footer').css('position', 'fixed');    
+          $('#footer').css('position', 'relative');    
         }
         /*//////////////// RESPONSIVE LOGIC FOR SMARTPHONES /////////// */
         let smartPhoneResponsive = ()=>{
           minResponsive();
           removeClass('medicaLogo', 'container');
+          removeClass('navbarNav', 'container');
+          removeClass('halfNavBar', 'half-nav');
+          removeClass('collapseFirstIndex', 'margin-sm-left');
+          removeClass('collapseIcons', 'hide');          
+          removeClass('collapseIcons2', 'hide');          
+          removeClass('collapseIcons3', 'hide');          
+          removeClass('collapseIcons4', 'hide');          
+          addClass('navbarIcons', 'hide');
+          if(appendCounter == 0){
+            $('.location').append("Ubicación");
+            $('.whatsapp').append("WhatsApp");
+            $('.email').append("Email");
+            $('.facebook').append("Facebook");
+            appendCounter = 1;
+          }
           addClass('medicaLogo', 'responsiveContainer');
         }
         /**/////////////////RESPONSIVE ENGINE //////////////// */
@@ -268,6 +272,8 @@
           if(viewportWidth <= 1024 && viewportWidth > 800){
             removeClass('footerGap', 'col-md');
             addClass('footerGap', 'col-sm-1');
+            removeClass('medicaLogo', 'justify-content-center');
+            $("#logoImg").css('margin-left','30px');
           }
           if(viewportWidth < 800 && viewportWidth > 500){
             $('#footerGap').remove();
@@ -282,7 +288,7 @@
             removeClass('li3', 'margin-md-left');
             removeClass('li4', 'margin-md-left');                        
           }
-          if(viewportWidth <= 1000 && viewportWidth > 810){
+          if(viewportWidth <= 1020 && viewportWidth > 810){
             minResponsive();
           }else if(viewportWidth <= 810){
             smartPhoneResponsive();

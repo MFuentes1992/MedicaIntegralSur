@@ -16,20 +16,19 @@ body{
 }
 
 #bodyIndex{
-  background-color: #58A3FE !important;   
-  height: 100%;
+  background-color: #56A1FC !important;
+  height: 900px;
   overflow-y: hidden;        
 }
 
 #BodyContact{  
   background-color: #007BFF;
 }
-
 .row{
   margin-right: 0px !important;
 }
 #footer{    
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;

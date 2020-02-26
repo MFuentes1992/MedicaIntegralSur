@@ -89,12 +89,12 @@
             </div>
           </nav>
         </div>
-        <div class="navbar-helper container-fluid">
-            <p>p</p>
-        </div>
-        <div class="container-fluid news-container">            
+        <div class="container-fluid news-container">  
+            <div style="margin-bottom:2%;">
+              <h1 class="servicios-title">Nuestros Servicios</h1>
+            </div>          
             <div class="container-fluid">
-
+                
                 <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -290,7 +290,6 @@
               $('.facebook').append("Facebook");
               appendCounter = 1;
             }
-            $('#footerAbout').css('position', 'relative');
             $('.navbar-helper').remove(); 
             $('.slide').css('width', `${viewportWidth - 10}px`);
             $('.card').css('width', `${viewportWidth - 10}px`);                                              
@@ -313,8 +312,7 @@
               $('.email').empty();
               $('.whatsapp').empty();  
               appendCounter = 0;
-            }
-            $('#footerAbout').css('position', 'relative');                          
+            }                         
           }
           /*/////////////// SMARTPHONE /////////////////*/
           let smartPhoneResponsive = ()=>{
@@ -344,6 +342,7 @@
               $('#footerGap').remove();
               removeClass('footerSupport', 'col-md');
               addClass('footerSupport', 'col-md-4');
+              $('#footerAbout').css('position','relative');
               totalSlides = 1;
             }
             if(viewportWidth < 500){            

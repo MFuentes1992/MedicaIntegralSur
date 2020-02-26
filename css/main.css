@@ -39,6 +39,7 @@ body{
   left: 0;
   bottom: 0;    
   width: 100%;
+  z-index: 100;
   background-color: #333333;
 }
 .navbar-helper{
@@ -189,9 +190,9 @@ body{
 .news-container{
   background-color:#007BFF !important;
   position: relative;
-  height: 841px;
+  height: 1100px;
   width: 100%;
-  margin-top: 5%;  
+  padding-top: 10%;  
 }
 
 .swiper-container{
@@ -256,6 +257,12 @@ body{
 .acerca-title > h1{
   position: relative;
   top:150px;
+  font-size: 6em;
+  color: #FFF;
+  text-align: center;
+}
+.servicios-title{
+  position: relative;
   font-size: 6em;
   color: #FFF;
   text-align: center;

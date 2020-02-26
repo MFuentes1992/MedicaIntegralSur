@@ -103,7 +103,7 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/Servicios/MISMEDICO.jpg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/servicios/MISMEDICO.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>                                    
@@ -116,7 +116,7 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/Servicios/MISMASAJE.jpg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/servicios/MISMASAJE.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>                                    
@@ -129,7 +129,7 @@
 
                           <div class="card">
                               <div class="card-image">
-                                  <img src="<?=$url?>img/Servicios/MISNEUROCIRUGIA.jpg" height="600" alt="" class="slide">
+                                  <img src="<?=$url?>img/servicios/MISNEUROCIRUGIA.jpg" height="600" alt="" class="slide">
                               </div>
                               <div class="card-text">
                                   <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>
@@ -142,7 +142,7 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/Servicios/MISNUTRICION.jpg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/servicios/MISNUTRICION.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>
@@ -154,7 +154,7 @@
 
                           <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/Servicios/MISPSICOLOGA.jpg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/servicios/MISPSICOLOGA.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>

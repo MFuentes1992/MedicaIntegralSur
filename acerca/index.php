@@ -90,6 +90,11 @@
         <div class="navbar-helper container-fluid">
             <p>p</p>
         </div>
+        <div class="acerca-title">
+          <h1>
+            Médica Integral Sur
+          </h1>
+        </div>
         <div class="container-fluid about-container">            
             <div class="container-fluid about-container-fluid">
                 <div class="row">

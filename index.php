@@ -125,24 +125,28 @@
                         <div class="banner-slide" id="banner1">
                                              
                         </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>  
                     <div class="swiper-slide">                      
                         <div class="banner-slide" id="banner2">
                           
                         </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>  
                     <div class="swiper-slide">
                         <div class="banner-slide" id="banner3">
                           
                         </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div> 
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
                     <!-- If we need scrollbar -->
                     <div class="swiper-scrollbar"></div>                                            
                 </div>

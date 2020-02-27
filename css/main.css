@@ -312,6 +312,6 @@ body{
   height: fit-content;
 }
 .swiper-button-next, .swiper-button-prev{
-  color: #FFF;
+  color: #FFF !important;
   font-weight: bold;
 }

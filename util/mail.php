@@ -103,7 +103,6 @@ $msg = isset($_POST["msg"])?$_POST["msg"]: "NA";
 
 // Enviarlo
     $success = mail($para, $título, $mensaje, $cabeceras);
-    $success = true;
     if ($success) {        
         echo json_encode(array('success' => 1));
     }else{

@@ -16,9 +16,9 @@ body{
 }
 
 #bodyIndex{
-  background-color: #56A1FC !important;
-  height: 900px;
-  overflow-y: hidden;        
+  background-color:#007BFF !important;
+  position: relative;
+  width: 100%;   
 }
 
 #BodyContact{  
@@ -283,4 +283,8 @@ body{
 
 .swiper-container{
   height: fit-content;
+}
+.swiper-button-next, .swiper-button-prev{
+  color: #FFF;
+  font-weight: bold;
 }

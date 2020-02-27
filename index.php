@@ -15,9 +15,13 @@
         <link rel="stylesheet" href="css/glide-3.4.1/dist/css/glide.theme.min.css"> 
         <link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/fontawesome.css">
         <link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/solid.css">
-        <link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/brands.css">      
+        <link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/brands.css"> 
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">      
     </head>
     <script src="Js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
       var bodyIndexLoaderResponsive = ()=>{
         viewportWidth = $(window).width();
@@ -99,7 +103,7 @@
             </nav>
         </div>
         <div class="container-fluid" id="bodyIndex">
-            <div class="glide glideDefault">
+            <!--<div class="glide glideDefault">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
                     <li class="glide__slide">
@@ -113,9 +117,45 @@
                     </li>
                   </ul>
                 </div>
+            </div>-->
+            <div class="container-fluid">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="<?=$url?>img/banner/banner1.jpg" alt="">
+                        </div>
+                      </div>                      
+                    </div>  
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="<?=$url?>img/banner/banner2.jpg" height="600" alt="">                        
+                        </div>
+                      </div>
+                    </div>  
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="<?=$url?>img/banner/banner3.jpg" height="600" alt="">                        
+                        </div>
+                      </div>
+                    </div> 
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>                                            
+                </div>
+              </div>              
             </div>
             <!--///////////////// GLIDE RESPONSIVE /////////////////////-->
-            <div class="glide glideResponsive">
+            <!--<div class="glide glideResponsive">
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                   <li class="glide__slide">
@@ -129,7 +169,7 @@
                   </li>
                 </ul>
               </div>
-          </div>
+          </div>-->
         </div>
         <div class="container-fluid" id="footer">
             <div class="row" style="padding-top: 10px;">
@@ -190,10 +230,10 @@
         var viewportHeight = 0;
         var appendCounter = 0;
         /**GLIDE CARROUSSEL LOGIC */        
-        var glideHorizon = new Glide('.glideDefault', { autoplay: 5000, hoverpause: false});
-        var glideVertical = new Glide('.glideResponsive', { autoplay: 5000, hoverpause: false});
-        glideVertical.mount();
-        glideHorizon.mount();
+        //var glideHorizon = new Glide('.glideDefault', { autoplay: 5000, hoverpause: false});
+        //var glideVertical = new Glide('.glideResponsive', { autoplay: 5000, hoverpause: false});
+        //glideVertical.mount();
+        //glideHorizon.mount();
 
         let removeClass = (elementID, className) =>{
           $(`#${elementID}`).removeClass(className);
@@ -209,14 +249,14 @@
         }
         /**////////////// RESPONSIVE LOGIC FOR TABLETS ////////////// */
         let minResponsive = ()=>{
-          $('.glideDefault').hide();
-          $('.glideResponsive').show();
+          //$('.glideDefault').hide();
+          //$('.glideResponsive').show();
           $('#footer').css('position', 'relative');
         }
         /*////////////// RESPONSIVE LOGIC FOR PC & LAPTOP ///////// */
         let maxResponsive = ()=>{
-          $('.glideDefault').show();                            
-          $('.glideResponsive').hide(); 
+          //$('.glideDefault').show();                            
+          //$('.glideResponsive').hide(); 
           addClass('navbarNav', 'container');
           addClass('halfNavBar', 'half-nav');
           addClass('collapseFirstIndex', 'margin-sm-left');
@@ -302,7 +342,21 @@
         };
 
         /*******BOOTSTRAP POP OVER********/
-        $('[data-toggle="popover"]').popover()
+        $('[data-toggle="popover"]').popover();
+          /*//////// GLIDE SWIPER ////////////////*/
+          var mySwiper = new Swiper ('.swiper-container', {
+                // Optional parameters
+                slidesPerView: 1,                
+                direction: 'horizontal',
+                loop: true,
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+                cubeEffect:{
+                  slideShadows: false,                  
+                }
+            });        
       });
       
 

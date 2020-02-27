@@ -76,7 +76,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link white fnt-md margin-md-right" href="mailto:especialidadesmedicas@gmail.com">
+                  <a class="nav-link white fnt-md margin-md-right" href="mailto:medicaintegralsur@gmail.com">
                     <i class="fas fa-envelope"></i>
                   </a>
                 </li>
@@ -208,7 +208,7 @@
                 <li><span class="white" style="font-weight: bold;">Info</span></li>
                 <li class="nav-item"><i class="fas fa-phone-square-alt blue"></i><span class="white margin-sm-left">Cel. 734 128 87 30</span></li>
                 <li class="nav-item"><i class="fas fa-tty blue"></i><span class="white margin-sm-left">Tel. 734 12 0 62</span></li>
-                <li class="nav-item"><i class="fas fa-envelope-open-text blue"></i><span class="white margin-sm-left">Email.</span></li>
+                <li class="nav-item"><i class="fas fa-envelope-open-text blue"></i><span class="white margin-sm-left">Email. medicaintegralsur@gmail.com</span></li>
                 <li class="nav-item"><i class="fas fa-inbox blue"></i><span class="white margin-sm-left">CP. 62780</span></li>
                 <li class="nav-item"><i class="fas fa-map-marker-alt blue"></i><span class="white margin-sm-left">Calle Pablo Sidar # 3 Colonia Centro, Zacatepec Morelos</span></li>
               </ul>

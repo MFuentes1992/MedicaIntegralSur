@@ -280,3 +280,7 @@ body{
 #jumboContainer{
   vertical-align: middle;
 }
+
+.swiper-container{
+  height: fit-content;
+}

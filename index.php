@@ -122,25 +122,19 @@
               <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <div class="card">
-                        <div class="card-image">
-                          <img src="<?=$url?>img/banner/banner1.jpg" alt="">
+                        <div class="banner-slide" id="banner1">
+                                             
                         </div>
-                      </div>                      
+                    </div>  
+                    <div class="swiper-slide">                      
+                        <div class="banner-slide" id="banner2">
+                          
+                        </div>
                     </div>  
                     <div class="swiper-slide">
-                      <div class="card">
-                        <div class="card-image">
-                          <img src="<?=$url?>img/banner/banner2.jpg" height="600" alt="">                        
+                        <div class="banner-slide" id="banner3">
+                          
                         </div>
-                      </div>
-                    </div>  
-                    <div class="swiper-slide">
-                      <div class="card">
-                        <div class="card-image">
-                          <img src="<?=$url?>img/banner/banner3.jpg" height="600" alt="">                        
-                        </div>
-                      </div>
                     </div> 
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -155,7 +149,7 @@
               </div>              
             </div>
             <!--///////////////// GLIDE RESPONSIVE /////////////////////-->
-            <!--<div class="glide glideResponsive">
+            <div class="glide glideResponsive">
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                   <li class="glide__slide">
@@ -169,7 +163,7 @@
                   </li>
                 </ul>
               </div>
-          </div>-->
+          </div>
         </div>
         <div class="container-fluid" id="footer">
             <div class="row" style="padding-top: 10px;">
@@ -231,8 +225,8 @@
         var appendCounter = 0;
         /**GLIDE CARROUSSEL LOGIC */        
         //var glideHorizon = new Glide('.glideDefault', { autoplay: 5000, hoverpause: false});
-        //var glideVertical = new Glide('.glideResponsive', { autoplay: 5000, hoverpause: false});
-        //glideVertical.mount();
+        var glideVertical = new Glide('.glideResponsive', { autoplay: 5000, hoverpause: false});
+        glideVertical.mount();
         //glideHorizon.mount();
 
         let removeClass = (elementID, className) =>{
@@ -249,14 +243,14 @@
         }
         /**////////////// RESPONSIVE LOGIC FOR TABLETS ////////////// */
         let minResponsive = ()=>{
-          //$('.glideDefault').hide();
-          //$('.glideResponsive').show();
+          $('.swiper-container').hide();
+          $('.glideResponsive').show();
           $('#footer').css('position', 'relative');
         }
         /*////////////// RESPONSIVE LOGIC FOR PC & LAPTOP ///////// */
         let maxResponsive = ()=>{
-          //$('.glideDefault').show();                            
-          //$('.glideResponsive').hide(); 
+          $('.swiper-container').show();                            
+          $('.glideResponsive').hide(); 
           addClass('navbarNav', 'container');
           addClass('halfNavBar', 'half-nav');
           addClass('collapseFirstIndex', 'margin-sm-left');
@@ -274,7 +268,7 @@
             $('.whatsapp').empty();  
             appendCounter = 0;
           }
-          $('#footer').css('position', 'relative');    
+          $('#footer').css('position', 'fixed');    
         }
         /*//////////////// RESPONSIVE LOGIC FOR SMARTPHONES /////////// */
         let smartPhoneResponsive = ()=>{
@@ -313,6 +307,7 @@
             removeClass('footerGap', 'col-md');
             addClass('footerGap', 'col-sm-1');
             removeClass('medicaLogo', 'justify-content-center');
+            $('#medicaLogo').css('width', 'fit-content');
             $("#logoImg").css('margin-left','30px');
           }
           if(viewportWidth < 800 && viewportWidth > 500){
@@ -346,7 +341,7 @@
           /*//////// GLIDE SWIPER ////////////////*/
           var mySwiper = new Swiper ('.swiper-container', {
                 // Optional parameters
-                slidesPerView: 1,                
+                slidesPerView: 1,               
                 direction: 'horizontal',
                 loop: true,
                 navigation: {

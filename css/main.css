@@ -18,7 +18,9 @@ body{
 #bodyIndex{
   background-color:#007BFF !important;
   position: relative;
-  width: 100%;   
+  width: 100%;  
+  height: fit-content; 
+  padding-top: 5%;
 }
 
 #BodyContact{  
@@ -115,7 +117,7 @@ body{
   height: 80px;
   width: 100%;
   z-index: 10000;
-  position: fixed;  
+  position: relative;  
 }
 .list{
   list-style: none;
@@ -186,6 +188,30 @@ body{
   width: 90%;
   margin: auto;
   text-align: justify;
+}
+.banner-slide{
+  position: relative;
+  width: 50%;
+  height: 450px !important;
+  height: auto;
+  margin: auto;
+}
+#banner1{
+  background-image: url("../img/banner/banner1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#banner2{
+  background-image: url("../img/banner/banner2.jpg");
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#banner3{
+  background-image: url("../img/banner/banner3.jpg");
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .news-container{
   background-color:#007BFF !important;

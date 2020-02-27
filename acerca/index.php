@@ -91,7 +91,7 @@
             <p>p</p>
         </div>
         <div class="acerca-title">
-          <h1>
+          <h1 id="acercaTitle">
             Médica Integral Sur
           </h1>
         </div>
@@ -287,7 +287,8 @@
               removeClass('li1', 'margin-md-left');
               removeClass('li2', 'margin-md-left');
               removeClass('li3', 'margin-md-left');
-              removeClass('li4', 'margin-md-left');                        
+              removeClass('li4', 'margin-md-left');
+              $('#acercaTitle').css('font-size', '3em');                        
             }
             if(viewportWidth < 400){
                             

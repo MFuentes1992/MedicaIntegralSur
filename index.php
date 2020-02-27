@@ -268,7 +268,10 @@
             $('.whatsapp').empty();  
             appendCounter = 0;
           }
-          $('#footer').css('position', 'fixed');    
+          if($(window).height() > 700)
+            $('#footer').css('position', 'absolute');
+          else
+            $('#footer').css('position', 'relative');   
         }
         /*//////////////// RESPONSIVE LOGIC FOR SMARTPHONES /////////// */
         let smartPhoneResponsive = ()=>{

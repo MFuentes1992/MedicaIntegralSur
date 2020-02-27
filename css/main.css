@@ -30,7 +30,7 @@ body{
   margin-right: 0px !important;
 }
 #footer{    
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -199,18 +199,19 @@ body{
 #banner1{
   background-image: url("../img/banner/banner1.jpg");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 #banner2{
   background-image: url("../img/banner/banner2.jpg");
-  background-size: cover;
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 #banner3{
   background-image: url("../img/banner/banner3.jpg");
-  background-size: cover;
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .news-container{

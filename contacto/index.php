@@ -281,6 +281,8 @@
             $('.card-plane').css('margin','auto');
             $('#contactForm').css('margin-top', '10%');
             $('#contactForm').css('margin-bottom', '5%');
+            removeClass('medicaLogo', 'justify-content-center');
+            $("#logoImg").css('margin-left','30px');
             removeClass('footerGap', 'col-md');
             removeClass('contactForm', 'col-md-4');
             addClass('footerGap', 'col-sm-1');                      

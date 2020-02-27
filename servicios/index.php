@@ -336,6 +336,8 @@
             if(viewportWidth <= 1024 && viewportWidth > 800){
               removeClass('footerGap', 'col-md');
               addClass('footerGap', 'col-sm-1'); 
+              removeClass('medicaLogo', 'justify-content-center');
+              $("#logoImg").css('margin-left','30px');
               totalSlides = 1;             
             }
             if(viewportWidth < 800 && viewportWidth > 500){

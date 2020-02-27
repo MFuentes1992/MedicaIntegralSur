@@ -272,6 +272,8 @@
               removeClass('footerGap', 'col-md');
               addClass('footerGap', 'col-sm-1');
               $('.img-profile-container').css('padding-left','5%');
+              removeClass('medicaLogo', 'justify-content-center');
+              $("#logoImg").css('margin-left','30px');
             }
             if(viewportWidth < 800 && viewportWidth > 500){
               $('#footerGap').remove();

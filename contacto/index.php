@@ -358,7 +358,7 @@
             $(".alert").css('visibility', 'hidden');
               $.ajax({
               type: "POST",
-              url: "http://www.medicaintegralsur.com/util/mail.php",
+              url: "https://www.medicaintegralsur.com/util/mail.php",
               data: data,
               success: function(response){
                 var jsonData = JSON.parse(response);              

@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Especialidades Médicas y Medicina General
+            Médica Integral Sur
         </title>
         <link rel="stylesheet" href="<?=$url?>css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?=$url?>css/main.css">        
@@ -33,7 +33,7 @@
                   <a class="nav-link font-weight-bold" href="<?=$url?>acerca/">Acerca</a>
                 </li>
                 <li class="nav-item active margin-md-right">
-                  <a class="nav-link font-weight-bold" href="<?=$url?>noticias/">Noticias</a>
+                  <a class="nav-link font-weight-bold" href="<?=$url?>servicios/">Servicios</a>
                 </li>
                 <li class="nav-item active margin-md-right">
                   <a class="nav-link font-weight-bold" href="<?=$url?>contacto/">Contacto</a>
@@ -89,12 +89,12 @@
             </div>
           </nav>
         </div>
-        <div class="navbar-helper container-fluid">
-            <p>p</p>
-        </div>
-        <div class="container-fluid news-container">            
+        <div class="container-fluid news-container">  
+            <div style="margin-bottom:2%;">
+              <h1 class="servicios-title">Nuestros Servicios</h1>
+            </div>          
             <div class="container-fluid">
-
+                
                 <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -103,7 +103,7 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/noticias/MISMEDICO.jpg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/servicios/opt/MISMEDICO.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>                                    
@@ -116,7 +116,33 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/noticias/MISMASAJE.jpg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/servicios/opt/MISMEDICINAESTETICA.jpg" height="600" alt="" class="slide">
+                                </div>
+                                <div class="card-text">
+                                    <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>                                    
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="<?=$url?>img/servicios/opt/MISAURICULO.jpg" height="600" alt="" class="slide">
+                                </div>
+                                <div class="card-text">
+                                    <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>                                    
+                                </div>
+                            </div>
+
+
+                        </div>                                                
+                        <div class="swiper-slide">
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="<?=$url?>img/servicios/opt/MISMASAJE.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>                                    
@@ -129,7 +155,7 @@
 
                           <div class="card">
                               <div class="card-image">
-                                  <img src="<?=$url?>img/noticias/MISNEUROCIRUGIA.jpg" height="600" alt="" class="slide">
+                                  <img src="<?=$url?>img/servicios/opt/MISNEUROCIRUGIA.jpg" height="600" alt="" class="slide">
                               </div>
                               <div class="card-text">
                                   <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>
@@ -142,7 +168,7 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/noticias/MISNUTRICION.jpg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/servicios/opt/MISNUTRICION.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>
@@ -154,7 +180,7 @@
 
                           <div class="card">
                                 <div class="card-image">
-                                    <img src="<?=$url?>img/noticias/MISPSICOLOGA.jpg" height="600" alt="" class="slide">
+                                    <img src="<?=$url?>img/servicios/opt/MISPSICOLOGA.jpg" height="600" alt="" class="slide">
                                 </div>
                                 <div class="card-text">
                                     <p><a href="http://m.me/MedicaIntegralSur" target="_blank" class="messenger"><span class="badge badge-primary">Enviar mensaje</span></a>&nbsp;<a href="https://www.facebook.com/MedicaIntegralSur/" target="_blank"><span class="badge badge-danger">Mas informacion</span></a></p>
@@ -264,7 +290,6 @@
               $('.facebook').append("Facebook");
               appendCounter = 1;
             }
-            $('#footerAbout').css('position', 'relative');
             $('.navbar-helper').remove(); 
             $('.slide').css('width', `${viewportWidth - 10}px`);
             $('.card').css('width', `${viewportWidth - 10}px`);                                              
@@ -287,8 +312,7 @@
               $('.email').empty();
               $('.whatsapp').empty();  
               appendCounter = 0;
-            }
-            $('#footerAbout').css('position', 'relative');                          
+            }                         
           }
           /*/////////////// SMARTPHONE /////////////////*/
           let smartPhoneResponsive = ()=>{
@@ -318,6 +342,7 @@
               $('#footerGap').remove();
               removeClass('footerSupport', 'col-md');
               addClass('footerSupport', 'col-md-4');
+              $('#footerAbout').css('position','relative');
               totalSlides = 1;
             }
             if(viewportWidth < 500){            

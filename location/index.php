@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Especialidades Médicas y Medicina General
+            Médica Integral Sur
         </title>
         <link rel="stylesheet" href="<?=$url?>css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?=$url?>css/main.css">
@@ -31,7 +31,7 @@
                   <a class="nav-link font-weight-bold" href="<?=$url?>acerca/">Acerca</a>
                 </li>
                 <li class="nav-item active margin-md-right">
-                  <a class="nav-link font-weight-bold" href="<?=$url?>noticias/">Noticias</a>
+                  <a class="nav-link font-weight-bold" href="<?=$url?>servicios/">Servicios</a>
                 </li>
                 <li class="nav-item active margin-md-right">
                   <a class="nav-link font-weight-bold" href="<?=$url?>contacto/">Contacto</a>

@@ -16,20 +16,19 @@ body{
 }
 
 #bodyIndex{
-  background-color: #58A3FE !important;   
-  height: 100%;
+  background-color: #56A1FC !important;
+  height: 900px;
   overflow-y: hidden;        
 }
 
 #BodyContact{  
   background-color: #007BFF;
 }
-
 .row{
   margin-right: 0px !important;
 }
 #footer{    
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -40,6 +39,7 @@ body{
   left: 0;
   bottom: 0;    
   width: 100%;
+  z-index: 100;
   background-color: #333333;
 }
 .navbar-helper{
@@ -49,7 +49,7 @@ body{
 }
 .about-container{
   background-color:#ececec !important;
-  position: relative;         
+  position: relative;       
 }
 .about-container-fluid{
   background-color:#ececec !important;
@@ -139,14 +139,18 @@ body{
 
 .paragraph-title{
   font-family: 'Oswald';
-  margin-top: 8%;  
+  font-size: 28pt;
+  margin-top: 3%;
+  padding-right: 5%;
+  padding-left: 5%; 
 }
 .paragraph{
   font-family: Raleway;
-  margin-top: 5%;
-  font-size: medium;
+  margin-top: 1%;
+  font-size: 20pt;
   word-wrap: break-word;
-  padding-right: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   text-align: justify;
 }
 .card{
@@ -165,7 +169,8 @@ body{
   position: relative;
   width: 90%;  
   background-color: #FFF;
-  margin: auto;  
+  margin-left:10%;
+  height: 80%;  
   border-radius: 2%;
   padding: 1%;
 }
@@ -185,9 +190,9 @@ body{
 .news-container{
   background-color:#007BFF !important;
   position: relative;
-  height: 100%;
+  height: 1100px;
   width: 100%;
-  margin-top: 5%;  
+  padding-top: 10%;  
 }
 
 .swiper-container{
@@ -221,13 +226,57 @@ body{
 .justify-left{
   text-align: left;
 }
-
+.hidden{
+  height: 0px;
+  overflow-y: hidden;
+}
 .jumbo{
-  font-size: 38em;
+  font-size: 28em;
   color: #FFF;
-  padding-left: 5%;
+}
+#jumboContainer > p{
+  color: #FFF;
+  margin-left: 10%;
+  font-size: 18pt;
+}
+#jumboContainer > h1{
+  color: #FFF;
+  margin-left: 10%;
+}
+.contact-title{
+  font-size: 5em;
+}
+.acerca-title{
+  position: relative;
+  height: 400px;
+  background-image:
+  linear-gradient(
+    #007BFF, #56A1FC
+  );
+}
+.acerca-title > h1{
+  position: relative;
+  top:150px;
+  font-size: 6em;
+  color: #FFF;
+  text-align: center;
+}
+.servicios-title{
+  position: relative;
+  font-size: 6em;
+  color: #FFF;
+  text-align: center;
 }
 .contact{
   background-color: #007BFF;
   padding-top: 3%;
+}
+
+#rowContainer{
+  margin-top: 5%;
+  height: 841px;
+}
+
+#jumboContainer{
+  vertical-align: middle;
 }

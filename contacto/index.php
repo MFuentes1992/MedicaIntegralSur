@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Especialidades Médicas y Medicina General
+            Médica Integral Sur
         </title>
         <link rel="stylesheet" href="<?=$url?>css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?=$url?>css/main.css">
@@ -32,7 +32,7 @@
                       <a class="nav-link font-weight-bold" href="<?= $url ?>acerca/">Acerca</a>
                     </li>
                     <li class="nav-item active margin-md-right">
-                      <a class="nav-link font-weight-bold" href="<?= $url ?>noticias/">Noticias</a>
+                      <a class="nav-link font-weight-bold" href="<?= $url ?>servicios/">Servicios</a>
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>contacto/">Contacto</a>
@@ -92,9 +92,17 @@
             <div class="container-fluid contact">
                 <div class="row" id="rowContainer">
                     <div class="col-md-6" id="jumboContainer">
+                        <h1 class="contact-title">¡Contáctanos!</h1>
+                        <p>Queremos saber un poco más de ti, mándanos un correo con tu información 
+                            para localizarte y resolver todas tus dudas.</p>
                         <h1 class="jumbo"><i class="fas fa-ambulance"></i></h1>
                     </div>
                     <div class="col-md-4 card-plane" id="contactForm"> 
+                        <div class="hidden" id="informative">
+                          <h1 class="contact-title">¡Contáctanos!</h1>
+                          <p>Queremos saber un poco más de ti, mándanos un correo con tu información 
+                              para localizarte y resolver todas tus dudas.</p>
+                          </div>
                         <form id="contactForm">
                             <div class="form-group">
                                 <label for="contactName">Nombre completo</label>
@@ -269,12 +277,14 @@
           }          
           if(viewportWidth <= 1024 && viewportWidth > 800){
             $('#jumboContainer').remove();
+            removeClass('informative','hidden');
+            $('.card-plane').css('margin','auto');
             $('#contactForm').css('margin-top', '10%');
             $('#contactForm').css('margin-bottom', '5%');
             removeClass('footerGap', 'col-md');
             removeClass('contactForm', 'col-md-4');
             addClass('footerGap', 'col-sm-1');                      
-            addClass('contactForm', 'col-md-6');            
+            addClass('contactForm', 'col-lg-8');            
           }
           if(viewportWidth < 800 && viewportWidth > 500){
             $('#footerGap').remove();

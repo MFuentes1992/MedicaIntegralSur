@@ -27,8 +27,8 @@
                 <li class="nav-item active margin-md-right" id="collapseFirstIndex">
                   <a class="nav-link font-weight-bold" href="<?=$url?>">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active margin-md-right">
-                  <a class="nav-link font-weight-bold" href="<?=$url?>acerca/">Acerca</a>
+                <li class="nav-item active margin-md-right" id="mision-container">
+                  <a class="nav-link font-weight-bold" id="mision" href="<?=$url?>misionvision/">Misión y visión</a>
                 </li>
                 <li class="nav-item active margin-md-right">
                   <a class="nav-link font-weight-bold" href="<?=$url?>servicios/">Servicios</a>
@@ -86,9 +86,6 @@
               </ul>
             </div>
           </nav>
-        </div>
-        <div class="navbar-helper container-fluid">
-            <p>p</p>
         </div>
         <div class="acerca-title">
           <h1 id="acercaTitle">
@@ -227,13 +224,17 @@
             addClass('navbarNav', 'container');
             addClass('halfNavBar', 'half-nav');
             addClass('collapseFirstIndex', 'margin-sm-left');
-            addClass('collapseIcons', 'hide');
-            addClass('collapseIcons2', 'hide');
-            addClass('collapseIcons3', 'hide');
-            addClass('collapseIcons4', 'hide');          
+            //addClass('collapseIcons', 'hide');
+            //addClass('collapseIcons2', 'hide');
+            //addClass('collapseIcons3', 'hide');
+            //addClass('collapseIcons4', 'hide');          
             addClass('medicaLogo', 'container');
             removeClass('navbarIcons', 'hide');
             removeClass('medicaLogo', 'responsiveContainer');
+            $('#collapseIcons').remove();
+            $('#collapseIcons2').remove();
+            $('#collapseIcons3').remove();
+            $('#collapseIcons4').remove();            
             if(appendCounter == 1){
               $('.location').empty();
               $('.facebook').empty();
@@ -273,7 +274,9 @@
               addClass('footerGap', 'col-sm-1');
               $('.img-profile-container').css('padding-left','5%');
               removeClass('medicaLogo', 'justify-content-center');
+              removeClass('mision-container', 'col-md-4');
               $("#logoImg").css('margin-left','30px');
+              $("#mision").html('Misión');
             }
             if(viewportWidth < 800 && viewportWidth > 500){
               $('#footerGap').remove();

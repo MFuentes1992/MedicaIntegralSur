@@ -28,8 +28,8 @@
                     <li class="nav-item active margin-md-right" id="collapseFirstIndex">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>">Inicio <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active margin-md-right">
-                      <a class="nav-link font-weight-bold" href="<?= $url ?>acerca/">Acerca</a>
+                    <li class="nav-item active margin-md-right" id="mision-container">
+                      <a class="nav-link font-weight-bold" id="mision" href="<?= $url ?>misionvision/">Misión y visión</a>
                     </li>
                     <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>servicios/">Servicios</a>
@@ -236,19 +236,29 @@
           addClass('halfNavBar', 'half-nav');
           removeClass('medicaLogo', 'responsiveContainer');
           addClass('collapseFirstIndex', 'margin-sm-left');
-          addClass('collapseIcons', 'hide');
-          addClass('collapseIcons2', 'hide');
-          addClass('collapseIcons3', 'hide');
-          addClass('collapseIcons4', 'hide');          
+          //addClass('collapseIcons', 'hide');
+          //addClass('collapseIcons2', 'hide');
+          //addClass('collapseIcons3', 'hide');
+          //addClass('collapseIcons4', 'hide');          
           addClass('medicaLogo', 'container');
           removeClass('navbarIcons', 'hide');
+          $('#collapseIcons').remove();
+          $('#collapseIcons2').remove();
+          $('#collapseIcons3').remove();
+          $('#collapseIcons4').remove();             
           if(appendCounter == 1){
             $('.location').empty();
             $('.facebook').empty();
             $('.email').empty();
             $('.whatsapp').empty();  
             appendCounter = 0;
-          }           
+          }
+          if($(window).height() > 1100){
+              $('#footer').css('position', 'absolute');
+              console.log($(window).height())
+            } else{
+              $('#footer').css('position', 'relative');                               
+            }                       
         }
         /**///////////////// SMARTPHONES /////////////////// */
         let smartPhoneResponsive = ()=>{
@@ -275,19 +285,22 @@
           if(viewportWidth < 1515){
             $('.fnt-md').css('font-size', '1em');
           }          
-          if(viewportWidth <= 1024 && viewportWidth > 800){
-            $('#jumboContainer').remove();
-            removeClass('informative','hidden');
+          if(viewportWidth <= 1024 && viewportWidth > 800){            
+            removeClass('informative','hidden');           
+            removeClass('medicaLogo', 'justify-content-center');            
+            removeClass('footerGap', 'col-md');
+            removeClass('mision-container', 'col-md-4');
+            removeClass('contactForm', 'col-md-4');
+            addClass('footerGap', 'col-sm-1');                      
+            addClass('contactForm', 'col-lg-8');  
+            $("#logoImg").css('margin-left','30px');
+            $("#mision").html('Misión');  
             $('.card-plane').css('margin','auto');
             $('#contactForm').css('margin-top', '10%');
             $('#contactForm').css('margin-bottom', '5%');
-            removeClass('medicaLogo', 'justify-content-center');
-            $("#logoImg").css('margin-left','30px');
-            removeClass('footerGap', 'col-md');
-            removeClass('contactForm', 'col-md-4');
-            addClass('footerGap', 'col-sm-1');                      
-            addClass('contactForm', 'col-lg-8');            
-          }
+            $('#jumboContainer').remove();
+            $('.contact').css('padding-top', '0%');               
+            }
           if(viewportWidth < 800 && viewportWidth > 500){
             $('#footerGap').remove();
             removeClass('footerSupport', 'col-md');

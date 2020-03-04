@@ -276,10 +276,16 @@
             $('.whatsapp').empty();  
             appendCounter = 0;
           }
-          if($(window).height() > 775)
+          if($(window).height() > 775 && $(window).width() > 1745){
             $('#footer').css('position', 'absolute');
-          else
+            console.log($(window).height())
+            console.log($(window).width())
+          }
+          else{
+            console.log($(window).height())
+            console.log($(window).width())            
             $('#footer').css('position', 'relative');   
+          }            
         }
         /*//////////////// RESPONSIVE LOGIC FOR SMARTPHONES /////////// */
         let smartPhoneResponsive = ()=>{
@@ -347,6 +353,7 @@
         responsiveEngine(); /*Setting Home Page Banner*/
         window.onresize = function(event) {
           responsiveEngine(); /*When rezising is active, we need to set the propper Banner array*/
+          location.reload();
         };
 
         /*******BOOTSTRAP POP OVER********/

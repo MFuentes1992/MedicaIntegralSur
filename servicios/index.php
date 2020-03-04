@@ -29,7 +29,7 @@
                 <li class="nav-item active margin-md-right" id="collapseFirstIndex">
                   <a class="nav-link font-weight-bold" href="<?=$url?>">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active margin-md-right" id="mision-container">
+                <li class="nav-item active col-md-4 margin-sm-right" id="mision-container">
                   <a class="nav-link font-weight-bold" id="mision" href="<?=$url?>misionvision/">Misión y visión</a>
                 </li>
                 <li class="nav-item active margin-md-right">

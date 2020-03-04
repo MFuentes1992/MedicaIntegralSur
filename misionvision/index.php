@@ -27,7 +27,7 @@
                 <li class="nav-item active margin-md-right" id="collapseFirstIndex">
                   <a class="nav-link font-weight-bold" href="<?=$url?>">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active margin-md-right" id="mision-container">
+                <li class="nav-item active col-md-4 margin-sm-right" id="mision-container">
                   <a class="nav-link font-weight-bold" id="mision" href="<?=$url?>misionvision/">Misión y visión</a>
                 </li>
                 <li class="nav-item active margin-md-right">
@@ -87,21 +87,13 @@
             </div>
           </nav>
         </div>
-        <div class="acerca-title">
-          <h1 id="acercaTitle">
-            Médica Integral Sur
-          </h1>
-        </div>
         <div class="container-fluid about-container">            
             <div class="container-fluid about-container-fluid">
                 <div class="row">
-                    <!--<div class="col-md-6 img-profile-container">
-                        <img src="../img/profile/profile.jpg" alt="" class="img-profile">
-                    </div>
-                    <div class="col-md-1">
-
-                    </div> -->
                     <div class="col-lg-12 col-sm-12">
+                        <h1 class="title"> Médica Integral Sur</h1>
+                        <br>
+                        <br>
                         <h3 class="paragraph-title">MISIÓN:</h3>
                         <p class="paragraph">
                           Contribuir al cuidado de la vida y la recuperación de la salud, 
@@ -120,7 +112,7 @@
                     <div class="col-lg-12 col-sm-12">
                         <h3 class="paragraph-title">VISIÓN:</h3>
                         <p class="paragraph">
-                          Ser una institución de  de alta calidad, líder en atención integral y segura, 
+                          Ser una institución de alta calidad, líder en atención integral y segura, 
                           que se convierta en referente de la atención médica privada en México.
                         </p>
                     </div>

@@ -51,12 +51,16 @@ body{
 }
 .about-container{
   background-color:#ececec !important;
-  position: relative;       
+  position: relative;
+  padding-top: 5%; 
+  overflow-y: hidden;    
 }
 .about-container-fluid{
-  background-color:#ececec !important;
-  position: relative;
-  padding-bottom: 5%;  
+  position: relative;  
+  width: 50%;
+  height: 2000px;
+  background-color: #FFF;
+  
 }
 #aboutBody{
   background-color: #ececec !important;
@@ -149,6 +153,12 @@ body{
   padding-right: 5%;
   padding-left: 5%; 
 }
+.title{
+  font-family: 'Oswald';
+  font-size: 38pt;
+  text-align: center;
+  margin-top: 2%;
+}
 .paragraph{
   font-family: Raleway;
   margin-top: 1%;
@@ -194,8 +204,8 @@ body{
 }
 .banner-slide{
   position: relative;
-  width: 50%;
-  height: 450px !important;
+  width: 100%;
+  height: 600px !important;
   height: auto;
   margin: auto;
 }
@@ -276,13 +286,16 @@ body{
 .contact-title{
   font-size: 5em;
 }
-.acerca-title{
+.about-container{
   position: relative;
-  height: 400px;
-  background-image:
+  height: 1000px;  
+  /*background-image:
   linear-gradient(
     #007BFF, #56A1FC
-  );
+  );*/
+  background-image: url('../img/acerca/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .acerca-title > h1{
   position: relative;
@@ -290,6 +303,7 @@ body{
   font-size: 6em;
   color: #FFF;
   text-align: center;
+  text-shadow: 1px 2px rgba(0,0,0,0.65);
 }
 .servicios-title{
   position: relative;

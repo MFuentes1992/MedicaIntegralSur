@@ -171,7 +171,7 @@
         </div>
         <div class="container-fluid" id="footer">
             <div class="row" style="padding-top: 10px;">
-              <div class="col-sm">
+              <div class="col-md-6">
                 <ul class="list">
                   <li><span class="white" style="font-weight: bold;">Info</span></li>
                   <li class="nav-item"><i class="fas fa-phone-square-alt blue"></i><span class="white margin-sm-left">Cel. 734 128 87 30</span></li>
@@ -179,10 +179,10 @@
                   <li class="nav-item"><i class="fas fa-envelope-open-text blue"></i><span class="white margin-sm-left">Email. medicaintegralsur@gmail.com</span></li>                  
                   <li class="nav-item"><i class="fas fa-inbox blue"></i><span class="white margin-sm-left">CP. 62780</span></li>
                   <li class="nav-item"><i class="fas fa-map-marker-alt blue"></i><span class="white margin-sm-left">Calle Pablo Sidar # 3 Colonia Centro, Zacatepec Morelos</span></li>
+                  
                 </ul>
               </div>
               <div class="col-md" id="footerGap">
-                
               </div>
               <div class="col-sm justify-content-end" id="footerSupport">
                 <ul class="list">
@@ -192,6 +192,11 @@
                   <li class="nav-item margin-md-left" id="li4"><i class="fas fa-calendar-alt blue"></i><span class="white margin-sm-left">Agendar una cita <a href="http://www.google.com/calendar/render?action=TEMPLATE&text=Medica+Integral+Sur&details=Formato+para+cita:+No+olvide+agregar+como+invitado+a+email@example.com&location=Calle+Pablo+Sidar,+Zacatepec,+Morelos&trp=false&sprop=&sprop=name:" target="_blank">[Aquí]</a></span></li>
                 </ul>
               </div>              
+            </div>
+            <div class="row">
+              <div class="container text-align">
+                <span class="white">2020 Médica Integral Sur - Todos los derechos reservados |<a href="" class="White" style="font-weight: bold;"> Aviso de Privacidad </a>|</span>
+              </div>
             </div>
         </div>
     </body>

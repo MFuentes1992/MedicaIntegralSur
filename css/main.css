@@ -158,6 +158,9 @@ body{
   text-align: center;
   margin-top: 2%;
 }
+.text-align{
+  text-align: center;
+}
 .paragraph{
   font-family: Raleway;
   margin-top: 1%;

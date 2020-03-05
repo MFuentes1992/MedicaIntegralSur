@@ -114,6 +114,11 @@
               </ul>
             </div>              
           </div>
+          <div class="row">
+            <div class="container text-align">
+              <span class="white">2020 Médica Integral Sur - Todos los derechos reservados |<a href="" class="White" style="font-weight: bold;"> Aviso de Privacidad </a>|</span>
+            </div>
+          </div>
         </div>
     </body>
     <script src="<?=$url?>Js/jquery/jquery-3.4.1.min.js"></script>

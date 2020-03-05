@@ -28,7 +28,7 @@
                   <a class="nav-link font-weight-bold" href="<?=$url?>">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active col-md-4 margin-sm-right" id="mision-container">
-                  <a class="nav-link font-weight-bold" id="mision" href="<?=$url?>misionvision/">Misión y visión</a>
+                  <a class="nav-link font-weight-bold" id="mision" href="<?=$url?>misionvision/">Misión/Visión</a>
                 </li>
                 <li class="nav-item active margin-md-right">
                   <a class="nav-link font-weight-bold" href="<?=$url?>servicios/">Servicios</a>
@@ -228,7 +228,7 @@
             removeClass('footerGap', 'col-md');            
             removeClass('medicaLogo', 'justify-content-center');
             removeClass('mision-container', 'col-md-4');
-            $("#mision").html('Misión');
+            $("#mision").html('Misión/Visión');
             $("#logoImg").css('margin-left','30px');             
           }
           if(viewportWidth < 800 && viewportWidth > 500){

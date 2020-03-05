@@ -29,7 +29,7 @@
                       <a class="nav-link font-weight-bold" href="<?= $url ?>">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active col-md-4 margin-sm-right" id="mision-container">
-                      <a class="nav-link font-weight-bold" id="mision" href="<?= $url ?>misionvision/">Misión y visión</a>
+                      <a class="nav-link font-weight-bold" id="mision" href="<?= $url ?>misionvision/">Misión/Visión</a>
                     </li>
                     <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>servicios/">Servicios</a>
@@ -289,7 +289,7 @@
             addClass('footerGap', 'col-sm-1');                      
             addClass('contactForm', 'col-lg-8');  
             $("#logoImg").css('margin-left','30px');
-            $("#mision").html('Misión');  
+            $("#mision").html('Misión/Visión');  
             $('.card-plane').css('margin','auto');
             $('#contactForm').css('margin-top', '10%');
             $('#contactForm').css('margin-bottom', '5%');

@@ -43,7 +43,7 @@
                       <a class="nav-link font-weight-bold" href="<?= $url ?>">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active col-md-4 margin-sm-right" id="mision-container">
-                      <a class="nav-link font-weight-bold" id="mision" href="<?= $url ?>misionvision/">Misión y visión</a>
+                      <a class="nav-link font-weight-bold" id="mision" href="<?= $url ?>misionvision/">Misión/visión</a>
                     </li>
                     <li class="nav-item active margin-md-right">
                       <a class="nav-link font-weight-bold" href="<?= $url ?>servicios/">Servicios</a>
@@ -281,11 +281,15 @@
             console.log($(window).height())
             console.log($(window).width())
           }
-          else{
+          else if($(window).height() > 775){
+            $('#footer').css('position', 'absolute');
+            console.log($(window).height())
+            console.log($(window).width()) 
+          } else{
             console.log($(window).height())
             console.log($(window).width())            
-            $('#footer').css('position', 'relative');   
-          }            
+            $('#footer').css('position', 'relative'); 
+          }           
         }
         /*//////////////// RESPONSIVE LOGIC FOR SMARTPHONES /////////// */
         let smartPhoneResponsive = ()=>{
@@ -313,6 +317,7 @@
           getViewportValues();
           if(viewportWidth <= 1450){
             $('.margin-md-right').css('margin-right', '14px');
+            $('.banner-slide').css('height', '400px');
           }
           if(viewportWidth < 1575 && viewportWidth > 1515){
             $('.fnt-md').css('font-size', '1.5em');

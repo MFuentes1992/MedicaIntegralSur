@@ -92,7 +92,7 @@
         </div>
         <div class="container-fluid" id="footerAbout">
           <div class="row" style="padding-top: 10px;">
-            <div class="col-sm">
+            <div class="col-md-6">
               <ul class="list">
                 <li><span class="white" style="font-weight: bold;">Info</span></li>
                 <li class="nav-item"><i class="fas fa-phone-square-alt blue"></i><span class="white margin-sm-left">Cel. 734 128 87 30</span></li>
@@ -102,7 +102,7 @@
                 <li class="nav-item"><i class="fas fa-map-marker-alt blue"></i><span class="white margin-sm-left">Calle Pablo Sidar # 3 Colonia Centro, Zacatepec Morelos</span></li>
               </ul>
             </div>
-            <div class="col-md" id="footerGap">
+            <div class="col-sm" id="footerGap">
               
             </div>
             <div class="col-sm justify-content-end" id="footerSupport">

@@ -239,6 +239,7 @@
           if(viewportWidth < 800 && viewportWidth > 500){
             $('#footerGap').remove();
             removeClass('footerSupport', 'col-md');
+            removeClass('mision-container', 'col-md-4');
             addClass('footerSupport', 'col-md-4');
           }
           if(viewportWidth < 500){            
@@ -248,7 +249,8 @@
             removeClass('li1', 'margin-md-left');
             removeClass('li2', 'margin-md-left');
             removeClass('li3', 'margin-md-left');
-            removeClass('li4', 'margin-md-left');                        
+            removeClass('li4', 'margin-md-left');
+            removeClass('mision-container', 'col-md-4');                        
           }
           if(viewportWidth < 400){
                           

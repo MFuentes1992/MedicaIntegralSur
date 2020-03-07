@@ -343,6 +343,7 @@
             $('#footerGap').remove();
             removeClass('footerSupport', 'col-md');
             addClass('footerSupport', 'col-md-4');
+            removeClass('mision-container', 'col-md-4');
           }
           if(viewportWidth < 500){            
             $('#footerGap').remove();
@@ -350,7 +351,8 @@
             removeClass('li1', 'margin-md-left');
             removeClass('li2', 'margin-md-left');
             removeClass('li3', 'margin-md-left');
-            removeClass('li4', 'margin-md-left');                        
+            removeClass('li4', 'margin-md-left');
+            removeClass('mision-container', 'col-md-4');                        
           }
           if(viewportWidth <= 1020 && viewportWidth > 810){
             minResponsive();

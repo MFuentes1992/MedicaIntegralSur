@@ -214,7 +214,8 @@
             }
             $('#footerAbout').css('position', 'relative');
             $('.navbar-helper').remove();
-            $('.img-profile').css('width','400px');            
+            $('.img-profile').css('width','400px'); 
+            $('.about-container-fluid').css('width', '90%');           
           }
           /*///////////// PC & LAPTOP //////////////*/
           let maxResponsive = ()=>{                                                    
@@ -278,12 +279,14 @@
             if(viewportWidth < 800 && viewportWidth > 500){
               $('#footerGap').remove();
               removeClass('footerSupport', 'col-md');
+              removeClass('mision-container', 'col-md-4');
               addClass('footerSupport', 'col-md-4');
             }
             if(viewportWidth < 500){            
               $('#footerGap').remove();              
               $('body').css('height','100%');
               removeClass('footerSupport', 'justify-content-end');
+              removeClass('mision-container', 'col-md-4');
               removeClass('li1', 'margin-md-left');
               removeClass('li2', 'margin-md-left');
               removeClass('li3', 'margin-md-left');

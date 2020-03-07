@@ -355,6 +355,7 @@
               $('#footerAbout').css('position','relative');
               $('.servicios-title').css('text-align', 'justify');
               $('.servicios-title').css('padding-left','3%');
+              removeClass('mision-container', 'col-md-4');
               totalSlides = 1;
             }
             if(viewportWidth < 500){            
@@ -367,6 +368,7 @@
               removeClass('li2', 'margin-md-left');
               removeClass('li3', 'margin-md-left');
               removeClass('li4', 'margin-md-left'); 
+              removeClass('mision-container', 'col-md-4');
               $('.servicios-title').css('padding-left','3%');
               totalSlides = 1;
             }

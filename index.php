@@ -363,7 +363,7 @@
         responsiveEngine(); /*Setting Home Page Banner*/
         window.onresize = function(event) {
           responsiveEngine(); /*When rezising is active, we need to set the propper Banner array*/
-          location.reload();
+          //location.reload();
         };
 
         /*******BOOTSTRAP POP OVER********/

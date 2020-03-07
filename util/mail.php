@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 // Varios destinatarios
     $para = "";
-    $para .= 'markfuentes2991@gmail.com';
+    $para .= 'especialidadesmedicas@gmail.com';
 
 // título
     $título = 'Nuevo Email';
